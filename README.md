@@ -1,37 +1,18 @@
-<div style="text-align:center;"><h1>Template for Sapphire Repositories</h1></div>
+<div style="text-align:center;"><h3>Plugins for the Sapphire DiscordJS framework</h3></div>
 
-[![GitHub](https://img.shields.io/github/license/sapphire-project/template)](https://github.com/sapphire-project/template/blob/main/LICENSE.md)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/sapphire-project/template.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sapphire-project/template/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/sapphire-project/template.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sapphire-project/template/context:javascript)
-[![Coverage Status](https://coveralls.io/repos/github/sapphire-project/template/badge.svg?branch=main)](https://coveralls.io/github/sapphire-project/template?branch=main)
-[![npm](https://img.shields.io/npm/v/@sapphire/template?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@sapphire/template)
-[![Depfu](https://badges.depfu.com/badges/template/count.svg)](https://depfu.com/github/sapphire-project/template?project_id=template)
+[![GitHub](https://img.shields.io/github/license/sapphire-project/plugins)](https://github.com/sapphire-project/plugins/blob/main/LICENSE.md)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/sapphire-project/plugins.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sapphire-project/plugins/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/sapphire-project/plugins.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sapphire-project/plugins/context:javascript)
+[![Coverage Status](https://coveralls.io/repos/github/sapphire-project/plugins/badge.svg?branch=main)](https://coveralls.io/github/sapphire-project/plugins?branch=main)
+[![Depfu](https://badges.depfu.com/badges/4535c5e8bb20f1a7ac41fd4cefcf6383/count.svg)](https://depfu.com/github/sapphire-project/plugins?project_id=15194)
 
-This is the template to be used for Sapphire Project repositories
+**Packages**
 
-# Steps after creating a repo with this template
-
-1. Find and replace all instances of `template` with the proper word / ID / etc
-2. Ensure the primary branch is called `main`
-3. Ensure branch protection is on
-4. Disable `Packages` from being included in the repository homepage
-5. Enable LGTM for the repository
-6. Enable Depfu for the repository
-7. Enable Coveralls for the repository
-8. Remove this section from the README
-
-## Features
-
--   This
--   Needs
--   Some
--   More
--   Filling
--   In
+[![npm](https://img.shields.io/npm/v/@sapphire/plugin-api?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@sapphire/plugin-api)
 
 ## API Documentation
 
-For the full API documentation please refer to [the TypeDoc generated documentation](https://sapphire-project.github.io/template)
+For the full API documentation please refer to [the TypeDoc generated documentation](https://sapphire-project.github.io/plugins/)
 
 ## Buy us some doughnuts
 
@@ -54,6 +35,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://favware.tech/"><img src="https://avatars3.githubusercontent.com/u/4019718?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jeroen Claassens</b></sub></a><br /><a href="https://github.com/sapphire-project/plugins/commits?author=Favna" title="Code">💻</a> <a href="#infra-Favna" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#projectManagement-Favna" title="Project Management">📆</a></td>
+    <td align="center"><a href="https://quantumlytangled.com"><img src="https://avatars1.githubusercontent.com/u/7919610?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nejc Drobnic</b></sub></a><br /><a href="https://github.com/sapphire-project/plugins/commits?author=QuantumlyTangled" title="Code">💻</a> <a href="https://github.com/sapphire-project/plugins/commits?author=QuantumlyTangled" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 

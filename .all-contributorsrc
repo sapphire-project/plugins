@@ -1,15 +1,38 @@
 {
-  "projectName": "template",
-  "projectOwner": "sapphire-project",
-  "repoType": "github",
-  "repoHost": "https://github.com",
-  "files": [
-    "README.md"
-  ],
-  "imageSize": 100,
-  "commit": true,
-  "commitConvention": "angular",
-  "contributors": [],
-  "contributorsPerLine": 7,
-  "skipCi": true
+	"projectName": "plugins",
+	"projectOwner": "sapphire-project",
+	"repoType": "github",
+	"repoHost": "https://github.com",
+	"files": [
+		"README.md",
+		"packages/api/README.md"
+	],
+	"imageSize": 100,
+	"commit": true,
+	"commitConvention": "angular",
+	"contributors": [
+		{
+			"login": "Favna",
+			"name": "Jeroen Claassens",
+			"avatar_url": "https://avatars3.githubusercontent.com/u/4019718?v=4",
+			"profile": "https://favware.tech/",
+			"contributions": [
+				"code",
+				"infra",
+				"projectManagement"
+			]
+		},
+		{
+			"login": "QuantumlyTangled",
+			"name": "Nejc Drobnic",
+			"avatar_url": "https://avatars1.githubusercontent.com/u/7919610?v=4",
+			"profile": "https://quantumlytangled.com",
+			"contributions": [
+				"code",
+				"doc"
+			]
+		}
+	],
+	"contributorsPerLine": 7,
+	"skipCi": true
 }
