@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TypeState | Sapphire Plugins</title>
+	<title>SecureCookieStoreSetOptions | Sapphire Plugins</title>
 	<meta name="description" content="Documentation for Sapphire Plugins">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,74 +55,81 @@
 					<a href="../modules/_sapphire_plugin_api.html">@sapphire/plugin-api</a>
 				</li>
 				<li>
-					<a href="_sapphire_plugin_api.typestate.html">TypeState</a>
+					<a href="_sapphire_plugin_api.securecookiestoresetoptions.html">SecureCookieStoreSetOptions</a>
 				</li>
 			</ul>
-			<h1>Enumeration TypeState</h1>
+			<h1>Interface SecureCookieStoreSetOptions</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>since</dt>
-						<dd><p>1.0.0</p>
-						</dd>
-					</dl>
-				</div>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">SecureCookieStoreSetOptions</span>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Enumeration members</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.typestate.html#dynamic" class="tsd-kind-icon">Dynamic</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.typestate.html#static" class="tsd-kind-icon">Static</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.securecookiestoresetoptions.html#domain" class="tsd-kind-icon">domain</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.securecookiestoresetoptions.html#expires" class="tsd-kind-icon">expires</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.securecookiestoresetoptions.html#maxage" class="tsd-kind-icon">max<wbr>Age</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.securecookiestoresetoptions.html#path" class="tsd-kind-icon">path</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="dynamic" class="tsd-anchor"></a>
-					<h3>Dynamic</h3>
-					<div class="tsd-signature tsd-kind-icon">Dynamic<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="domain" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> domain</h3>
+					<div class="tsd-signature tsd-kind-icon">domain<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/df408ec/packages/api/src/lib/utils/pathParsing.ts#L15">packages/api/src/lib/utils/pathParsing.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/df408ec/packages/api/src/lib/structures/api/CookieStore.ts#L115">packages/api/src/lib/structures/api/CookieStore.ts:115</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="static" class="tsd-anchor"></a>
-					<h3>Static</h3>
-					<div class="tsd-signature tsd-kind-icon">Static<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="expires" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> expires</h3>
+					<div class="tsd-signature tsd-kind-icon">expires<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/df408ec/packages/api/src/lib/utils/pathParsing.ts#L10">packages/api/src/lib/utils/pathParsing.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/df408ec/packages/api/src/lib/structures/api/CookieStore.ts#L113">packages/api/src/lib/structures/api/CookieStore.ts:113</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
-							</dd>
-						</dl>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="maxage" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Age</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Age<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/df408ec/packages/api/src/lib/structures/api/CookieStore.ts#L114">packages/api/src/lib/structures/api/CookieStore.ts:114</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="path" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> path</h3>
+					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/df408ec/packages/api/src/lib/structures/api/CookieStore.ts#L116">packages/api/src/lib/structures/api/CookieStore.ts:116</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -140,25 +147,13 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.methods.html" class="tsd-kind-icon">Methods</a>
+						<a href="../enums/_sapphire_plugin_api.methods.html" class="tsd-kind-icon">Methods</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-enum tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.typestate.html" class="tsd-kind-icon">Type<wbr>State</a>
-						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_sapphire_plugin_api.typestate.html#dynamic" class="tsd-kind-icon">Dynamic</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_sapphire_plugin_api.typestate.html#static" class="tsd-kind-icon">Static</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.types.html" class="tsd-kind-icon">Types</a>
+						<a href="../enums/_sapphire_plugin_api.typestate.html" class="tsd-kind-icon">Type<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/_sapphire_plugin_api.types.html" class="tsd-kind-icon">Types</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_sapphire_plugin_api.api.html" class="tsd-kind-icon">Api</a>
@@ -182,16 +177,34 @@
 						<a href="../classes/_sapphire_plugin_api.server.html" class="tsd-kind-icon">Server</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.apioptions.html" class="tsd-kind-icon">Api<wbr>Options</a>
+						<a href="_sapphire_plugin_api.apioptions.html" class="tsd-kind-icon">Api<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.routecachedefinition.html" class="tsd-kind-icon">Route<wbr>Cache<wbr>Definition</a>
+						<a href="_sapphire_plugin_api.routecachedefinition.html" class="tsd-kind-icon">Route<wbr>Cache<wbr>Definition</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.securecookiestoresetoptions.html" class="tsd-kind-icon">Secure<wbr>Cookie<wbr>Store<wbr>Set<wbr>Options</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_api.securecookiestoresetoptions.html" class="tsd-kind-icon">Secure<wbr>Cookie<wbr>Store<wbr>Set<wbr>Options</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_sapphire_plugin_api.securecookiestoresetoptions.html#domain" class="tsd-kind-icon">domain</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_sapphire_plugin_api.securecookiestoresetoptions.html#expires" class="tsd-kind-icon">expires</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_sapphire_plugin_api.securecookiestoresetoptions.html#maxage" class="tsd-kind-icon">max<wbr>Age</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_sapphire_plugin_api.securecookiestoresetoptions.html#path" class="tsd-kind-icon">path</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.userauthobject.html" class="tsd-kind-icon">User<wbr>Auth<wbr>Object</a>
+						<a href="_sapphire_plugin_api.userauthobject.html" class="tsd-kind-icon">User<wbr>Auth<wbr>Object</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/_sapphire_plugin_api.html#parsedpart" class="tsd-kind-icon">Parsed<wbr>Part</a>
@@ -253,10 +266,11 @@
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
