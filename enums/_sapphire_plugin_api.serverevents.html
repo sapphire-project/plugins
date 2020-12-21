@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TypeState | Sapphire Plugins</title>
+	<title>ServerEvents | Sapphire Plugins</title>
 	<meta name="description" content="Documentation for Sapphire Plugins">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,25 +55,16 @@
 					<a href="../modules/_sapphire_plugin_api.html">@sapphire/plugin-api</a>
 				</li>
 				<li>
-					<a href="_sapphire_plugin_api.typestate.html">TypeState</a>
+					<a href="_sapphire_plugin_api.serverevents.html">ServerEvents</a>
 				</li>
 			</ul>
-			<h1>Enumeration TypeState</h1>
+			<h1>Enumeration ServerEvents</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>since</dt>
-						<dd><p>1.0.0</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -81,8 +72,13 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.typestate.html#dynamic" class="tsd-kind-icon">Dynamic</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.typestate.html#static" class="tsd-kind-icon">Static</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.serverevents.html#error" class="tsd-kind-icon">Error</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.serverevents.html#match" class="tsd-kind-icon">Match</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.serverevents.html#middlewareerror" class="tsd-kind-icon">Middleware<wbr>Error</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.serverevents.html#middlewarefailure" class="tsd-kind-icon">Middleware<wbr>Failure</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.serverevents.html#middlewaresuccess" class="tsd-kind-icon">Middleware<wbr>Success</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.serverevents.html#nomatch" class="tsd-kind-icon">No<wbr>Match</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.serverevents.html#request" class="tsd-kind-icon">Request</a></li>
 							</ul>
 						</section>
 					</div>
@@ -91,38 +87,74 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="dynamic" class="tsd-anchor"></a>
-					<h3>Dynamic</h3>
-					<div class="tsd-signature tsd-kind-icon">Dynamic<span class="tsd-signature-symbol">:</span></div>
+					<a name="error" class="tsd-anchor"></a>
+					<h3>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;error&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/utils/RouteData.ts#L15">packages/api/src/lib/utils/RouteData.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L11">packages/api/src/lib/structures/http/Server.ts:11</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="static" class="tsd-anchor"></a>
-					<h3>Static</h3>
-					<div class="tsd-signature tsd-kind-icon">Static<span class="tsd-signature-symbol">:</span></div>
+					<a name="match" class="tsd-anchor"></a>
+					<h3>Match</h3>
+					<div class="tsd-signature tsd-kind-icon">Match<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;match&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/utils/RouteData.ts#L10">packages/api/src/lib/utils/RouteData.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L13">packages/api/src/lib/structures/http/Server.ts:13</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
-							</dd>
-						</dl>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="middlewareerror" class="tsd-anchor"></a>
+					<h3>Middleware<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Middleware<wbr>Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;middlewareError&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L16">packages/api/src/lib/structures/http/Server.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="middlewarefailure" class="tsd-anchor"></a>
+					<h3>Middleware<wbr>Failure</h3>
+					<div class="tsd-signature tsd-kind-icon">Middleware<wbr>Failure<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;middlewareFailure&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L15">packages/api/src/lib/structures/http/Server.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="middlewaresuccess" class="tsd-anchor"></a>
+					<h3>Middleware<wbr>Success</h3>
+					<div class="tsd-signature tsd-kind-icon">Middleware<wbr>Success<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;middlewareSuccess&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L17">packages/api/src/lib/structures/http/Server.ts:17</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="nomatch" class="tsd-anchor"></a>
+					<h3>No<wbr>Match</h3>
+					<div class="tsd-signature tsd-kind-icon">No<wbr>Match<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;noMatch&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L14">packages/api/src/lib/structures/http/Server.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="request" class="tsd-anchor"></a>
+					<h3>Request</h3>
+					<div class="tsd-signature tsd-kind-icon">Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;request&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L12">packages/api/src/lib/structures/http/Server.ts:12</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -145,24 +177,39 @@
 					<li class=" tsd-kind-enum tsd-parent-kind-module">
 						<a href="_sapphire_plugin_api.mimetypes.html" class="tsd-kind-icon">Mime<wbr>Types</a>
 					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.serverevents.html" class="tsd-kind-icon">Server<wbr>Events</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.typestate.html" class="tsd-kind-icon">Type<wbr>State</a>
+						<a href="_sapphire_plugin_api.serverevents.html" class="tsd-kind-icon">Server<wbr>Events</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_sapphire_plugin_api.typestate.html#dynamic" class="tsd-kind-icon">Dynamic</a>
+								<a href="_sapphire_plugin_api.serverevents.html#error" class="tsd-kind-icon">Error</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_sapphire_plugin_api.typestate.html#static" class="tsd-kind-icon">Static</a>
+								<a href="_sapphire_plugin_api.serverevents.html#match" class="tsd-kind-icon">Match</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_sapphire_plugin_api.serverevents.html#middlewareerror" class="tsd-kind-icon">Middleware<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_sapphire_plugin_api.serverevents.html#middlewarefailure" class="tsd-kind-icon">Middleware<wbr>Failure</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_sapphire_plugin_api.serverevents.html#middlewaresuccess" class="tsd-kind-icon">Middleware<wbr>Success</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_sapphire_plugin_api.serverevents.html#nomatch" class="tsd-kind-icon">No<wbr>Match</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_sapphire_plugin_api.serverevents.html#request" class="tsd-kind-icon">Request</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="_sapphire_plugin_api.typestate.html" class="tsd-kind-icon">Type<wbr>State</a>
+					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_sapphire_plugin_api.api.html" class="tsd-kind-icon">Api</a>
 					</li>

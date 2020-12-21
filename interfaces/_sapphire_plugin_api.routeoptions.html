@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TypeState | Sapphire Plugins</title>
+	<title>RouteOptions | Sapphire Plugins</title>
 	<meta name="description" content="Documentation for Sapphire Plugins">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,71 +55,133 @@
 					<a href="../modules/_sapphire_plugin_api.html">@sapphire/plugin-api</a>
 				</li>
 				<li>
-					<a href="_sapphire_plugin_api.typestate.html">TypeState</a>
+					<a href="_sapphire_plugin_api.routeoptions.html">RouteOptions</a>
 				</li>
 			</ul>
-			<h1>Enumeration TypeState</h1>
+			<h1>Interface RouteOptions</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>since</dt>
-						<dd><p>1.0.0</p>
-						</dd>
-					</dl>
-				</div>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="tsd-signature-type">PieceOptions</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">RouteOptions</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Enumeration members</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.typestate.html#dynamic" class="tsd-kind-icon">Dynamic</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.typestate.html#static" class="tsd-kind-icon">Static</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_sapphire_plugin_api.routeoptions.html#enabled" class="tsd-kind-icon">enabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.routeoptions.html#maximumbodylength" class="tsd-kind-icon">maximum<wbr>Body<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_sapphire_plugin_api.routeoptions.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.routeoptions.html#route" class="tsd-kind-icon">route</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="dynamic" class="tsd-anchor"></a>
-					<h3>Dynamic</h3>
-					<div class="tsd-signature tsd-kind-icon">Dynamic<span class="tsd-signature-symbol">:</span></div>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="enabled" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_sapphire_plugin_api.routeoptions.html">RouteOptions</a>.<a href="_sapphire_plugin_api.routeoptions.html#enabled">enabled</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/utils/RouteData.ts#L15">packages/api/src/lib/utils/RouteData.ts:15</a></li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/lib/Piece.d.ts:45</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether or not the piece should be enabled. If set to false, the piece will be unloaded.</p>
+						</div>
 						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
+							<dt>default</dt>
+							<dd><p>true</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="static" class="tsd-anchor"></a>
-					<h3>Static</h3>
-					<div class="tsd-signature tsd-kind-icon">Static<span class="tsd-signature-symbol">:</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="maximumbodylength" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> maximum<wbr>Body<wbr>Length</h3>
+					<div class="tsd-signature tsd-kind-icon">maximum<wbr>Body<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/utils/RouteData.ts#L10">packages/api/src/lib/utils/RouteData.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/Route.ts#L90">packages/api/src/lib/structures/Route.ts:90</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>(RFC 7230 3.3.2) The maximum decimal number of octets.</p>
+						</div>
 						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
+							<dt>default</dt>
+							<dd><p>this.client.options.api?.maximumBodyLength ?? 1024 * 1024 * 50</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_sapphire_plugin_api.routeoptions.html">RouteOptions</a>.<a href="_sapphire_plugin_api.routeoptions.html#name">name</a></p>
+						<ul>
+							<li>Defined in node_modules/@sapphire/pieces/dist/lib/Piece.d.ts:40</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name for the piece.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>&#39;&#39;</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="route" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> route</h3>
+					<div class="tsd-signature tsd-kind-icon">route<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/Route.ts#L84">packages/api/src/lib/structures/Route.ts:84</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The route the piece should represent.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>&#39;&#39;</p>
+							</dd>
+							<dt>example</dt>
+							<dd><pre><code class="language-typescript"><span class="hljs-string">&#x27;/users&#x27;</span>
+<span class="hljs-comment">// request.params -&gt; {}</span></code></pre>
+							</dd>
+							<dt>example</dt>
+							<dd><pre><code class="language-typescript"><span class="hljs-string">&#x27;/guilds/:guild/members/:member/&#x27;</span>
+<span class="hljs-comment">// request.params -&gt; { guild: &#x27;...&#x27;, member: &#x27;...&#x27; }</span></code></pre>
 							</dd>
 						</dl>
 					</div>
@@ -140,29 +202,17 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.httpcodes.html" class="tsd-kind-icon">Http<wbr>Codes</a>
+						<a href="../enums/_sapphire_plugin_api.httpcodes.html" class="tsd-kind-icon">Http<wbr>Codes</a>
 					</li>
 					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.mimetypes.html" class="tsd-kind-icon">Mime<wbr>Types</a>
+						<a href="../enums/_sapphire_plugin_api.mimetypes.html" class="tsd-kind-icon">Mime<wbr>Types</a>
 					</li>
 					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.serverevents.html" class="tsd-kind-icon">Server<wbr>Events</a>
+						<a href="../enums/_sapphire_plugin_api.serverevents.html" class="tsd-kind-icon">Server<wbr>Events</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-enum tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.typestate.html" class="tsd-kind-icon">Type<wbr>State</a>
-						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_sapphire_plugin_api.typestate.html#dynamic" class="tsd-kind-icon">Dynamic</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_sapphire_plugin_api.typestate.html#static" class="tsd-kind-icon">Static</a>
-							</li>
-						</ul>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/_sapphire_plugin_api.typestate.html" class="tsd-kind-icon">Type<wbr>State</a>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_sapphire_plugin_api.api.html" class="tsd-kind-icon">Api</a>
 					</li>
@@ -230,31 +280,49 @@
 						<a href="../classes/_sapphire_plugin_api.server.html" class="tsd-kind-icon">Server</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.apioptions.html" class="tsd-kind-icon">Api<wbr>Options</a>
+						<a href="_sapphire_plugin_api.apioptions.html" class="tsd-kind-icon">Api<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.apioptionsauth.html" class="tsd-kind-icon">Api<wbr>Options<wbr>Auth</a>
+						<a href="_sapphire_plugin_api.apioptionsauth.html" class="tsd-kind-icon">Api<wbr>Options<wbr>Auth</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.authdata.html" class="tsd-kind-icon">Auth<wbr>Data</a>
+						<a href="_sapphire_plugin_api.authdata.html" class="tsd-kind-icon">Auth<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.logindata.html" class="tsd-kind-icon">Login<wbr>Data</a>
+						<a href="_sapphire_plugin_api.logindata.html" class="tsd-kind-icon">Login<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.methodcallback.html" class="tsd-kind-icon">Method<wbr>Callback</a>
+						<a href="_sapphire_plugin_api.methodcallback.html" class="tsd-kind-icon">Method<wbr>Callback</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.middlewareoptions.html" class="tsd-kind-icon">Middleware<wbr>Options</a>
+						<a href="_sapphire_plugin_api.middlewareoptions.html" class="tsd-kind-icon">Middleware<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.routematch.html" class="tsd-kind-icon">Route<wbr>Match</a>
+						<a href="_sapphire_plugin_api.routematch.html" class="tsd-kind-icon">Route<wbr>Match</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.routeoptions.html" class="tsd-kind-icon">Route<wbr>Options</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_api.routeoptions.html" class="tsd-kind-icon">Route<wbr>Options</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_sapphire_plugin_api.routeoptions.html#enabled" class="tsd-kind-icon">enabled</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_sapphire_plugin_api.routeoptions.html#maximumbodylength" class="tsd-kind-icon">maximum<wbr>Body<wbr>Length</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_sapphire_plugin_api.routeoptions.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_sapphire_plugin_api.routeoptions.html#route" class="tsd-kind-icon">route</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.securecookiestoresetoptions.html" class="tsd-kind-icon">Secure<wbr>Cookie<wbr>Store<wbr>Set<wbr>Options</a>
+						<a href="_sapphire_plugin_api.securecookiestoresetoptions.html" class="tsd-kind-icon">Secure<wbr>Cookie<wbr>Store<wbr>Set<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/_sapphire_plugin_api.html#matchdata" class="tsd-kind-icon">Match<wbr>Data</a>
@@ -282,10 +350,11 @@
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
