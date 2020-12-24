@@ -10,11 +10,12 @@
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/sapphire-project/plugins.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sapphire-project/plugins/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/sapphire-project/plugins.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sapphire-project/plugins/context:javascript)
 [![Coverage Status](https://coveralls.io/repos/github/sapphire-project/plugins/badge.svg?branch=main)](https://coveralls.io/github/sapphire-project/plugins?branch=main)
-[![Depfu](https://badges.depfu.com/badges/4535c5e8bb20f1a7ac41fd4cefcf6383/count.svg)](https://depfu.com/github/sapphire-project/plugins?project_id=15194)
+[![Depfu](https://badges.depfu.com/badges/aec630570f2b49c60115673cff88a53e/count.svg)](https://depfu.com/github/sapphire-project/plugins?project_id=15372)
 
 **Packages**
 
-[![npm](https://img.shields.io/npm/v/@sapphire/plugin-api?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@sapphire/plugin-api)
+[![npm](https://img.shields.io/npm/v/@sapphire/plugin-api?color=crimson&logo=npm&style=flat-square&label=@sapphire/api)](https://www.npmjs.com/package/@sapphire/plugin-api)
+[![npm](https://img.shields.io/npm/v/@sapphire/plugin-logger?color=crimson&logo=npm&style=flat-square&label=@sapphire/logger)](https://www.npmjs.com/package/@sapphire/plugin-logger)
 
 </div>
 
@@ -53,6 +54,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
