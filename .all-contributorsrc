@@ -3,10 +3,7 @@
 	"projectOwner": "sapphire-project",
 	"repoType": "github",
 	"repoHost": "https://github.com",
-	"files": [
-		"README.md",
-		"packages/api/README.md"
-	],
+	"files": ["README.md", "packages/api/README.md", "packages/logger/README.md"],
 	"imageSize": 100,
 	"commit": true,
 	"commitConvention": "angular",
@@ -16,21 +13,28 @@
 			"name": "Jeroen Claassens",
 			"avatar_url": "https://avatars3.githubusercontent.com/u/4019718?v=4",
 			"profile": "https://favware.tech/",
-			"contributions": [
-				"code",
-				"infra",
-				"projectManagement"
-			]
+			"contributions": ["code", "infra", "projectManagement"]
 		},
 		{
 			"login": "QuantumlyTangled",
 			"name": "Nejc Drobnic",
 			"avatar_url": "https://avatars1.githubusercontent.com/u/7919610?v=4",
 			"profile": "https://quantumlytangled.com",
-			"contributions": [
-				"code",
-				"doc"
-			]
+			"contributions": ["code", "doc"]
+		},
+		{
+			"login": "kyranet",
+			"name": "Antonio Román",
+			"avatar_url": "https://avatars0.githubusercontent.com/u/24852502?v=4",
+			"profile": "https://github.com/kyranet",
+			"contributions": ["code"]
+		},
+		{
+			"login": "vladfrangu",
+			"name": "Vlad Frangu",
+			"avatar_url": "https://avatars3.githubusercontent.com/u/17960496?v=4",
+			"profile": "https://github.com/vladfrangu",
+			"contributions": ["review"]
 		}
 	],
 	"contributorsPerLine": 7,

@@ -1,0 +1,312 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@sapphire/plugin-logger | Sapphire Plugins</title>
+	<meta name="description" content="Documentation for Sapphire Plugins">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Sapphire Plugins</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="_sapphire_plugin_logger.html">@sapphire/plugin-logger</a>
+				</li>
+			</ul>
+			<h1>Module @sapphire/plugin-logger</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div align="center">
+						<p><img src="https://cdn.skyra.pw/gh-assets/sapphire.png" alt="Sapphire Logo"></p>
+						<a href="#sapphireplugin-logger" id="sapphireplugin-logger" style="color: inherit; text-decoration: none;">
+							<h1>@sapphire/plugin-logger</h1>
+						</a>
+						<p><strong>Plugin for <a href="https://github.com/sapphire-project/framework">@sapphire/framework</a> to have pretty console output.</strong></p>
+						<p><a href="https://github.com/sapphire-project/plugins/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/sapphire-project/plugins" alt="GitHub"></a>
+							<a href="https://lgtm.com/projects/g/sapphire-project/plugins/alerts/"><img src="https://img.shields.io/lgtm/alerts/g/sapphire-project/plugins.svg?logo=lgtm&logoWidth=18" alt="Total alerts"></a>
+							<a href="https://lgtm.com/projects/g/sapphire-project/plugins/context:javascript"><img src="https://img.shields.io/lgtm/grade/javascript/g/sapphire-project/plugins.svg?logo=lgtm&logoWidth=18" alt="Language grade: JavaScript"></a>
+							<a href="https://coveralls.io/github/sapphire-project/plugins?branch=main"><img src="https://coveralls.io/repos/github/sapphire-project/plugins/badge.svg?branch=main" alt="Coverage Status"></a>
+							<a href="https://bundlephobia.com/result?p=@sapphire/plugin-logger"><img src="https://img.shields.io/bundlephobia/min/@sapphire/plugin-logger?logo=webpack&style=flat-square" alt="npm bundle size"></a>
+							<a href="https://www.npmjs.com/package/@sapphire/plugin-logger"><img src="https://img.shields.io/npm/v/@sapphire/plugin-logger?color=crimson&logo=npm&style=flat-square" alt="npm"></a>
+						<a href="https://depfu.com/github/sapphire-project/plugins?project_id=15201"><img src="https://badges.depfu.com/badges/11bbf7392987e6fd51fc6559e1d42dfc/count.svg" alt="Depfu"></a></p>
+					</div>
+					<a href="#description" id="description" style="color: inherit; text-decoration: none;">
+						<h2>Description</h2>
+					</a>
+					<p>A Logger implementation that implements Sapphire&#39;s <code>ILogger</code> interface and implements timestamp and style formatting
+					with the blazing fast <a href="https://www.npmjs.com/package/colorette"><code>colorette</code></a> library.</p>
+					<a href="#features" id="features" style="color: inherit; text-decoration: none;">
+						<h2>Features</h2>
+					</a>
+					<ul>
+						<li>  Fully ready for TypeScript!</li>
+						<li>  Includes ESM ready entrypoint</li>
+						<li>  <a href="https://no-color.org"><code>NO_COLOR</code></a> friendly, inherited by colorette</li>
+					</ul>
+					<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+						<h2>Installation</h2>
+					</a>
+					<pre><code class="language-sh">yarn add -D @sapphire/plugin-logger</code></pre>
+					<hr>
+					<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+						<h2>Usage</h2>
+					</a>
+					<pre><code class="language-typescript"><span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;@sapphire/plugin-logger/register&#x27;</span>;</code></pre>
+					<a href="#logger-documentation" id="logger-documentation" style="color: inherit; text-decoration: none;">
+						<h2>Logger Documentation</h2>
+					</a>
+					<p>For the full @sapphire/plugin-logger documentation please refer to the TypeDoc generated <a href="https://sapphire-project.github.io/plugins/modules/_sapphire_plugin_logger.html">documentation</a>.</p>
+					<a href="#buy-us-some-doughnuts" id="buy-us-some-doughnuts" style="color: inherit; text-decoration: none;">
+						<h2>Buy us some doughnuts</h2>
+					</a>
+					<p>Sapphire Project is and always will be open source, even if we don&#39;t get donations. That being said, we know there are amazing people who may still want to donate just to show their appreciation. Thank you very much in advance!</p>
+					<p>We accept donations through Open Collective, Ko-fi, Paypal, Patreon and GitHub Sponsorships. You can use the buttons below to donate through your method of choice.</p>
+					<table>
+						<thead>
+							<tr>
+								<th align="center">Donate With</th>
+								<th align="center">Address</th>
+							</tr>
+						</thead>
+						<tbody><tr>
+								<td align="center">Open Collective</td>
+								<td align="center"><a href="https://opencollective.com/sapphire-project">Click Here</a></td>
+							</tr>
+							<tr>
+								<td align="center">Ko-fi</td>
+								<td align="center"><a href="https://ko-fi.com/sapphireproject">Click Here</a></td>
+							</tr>
+							<tr>
+								<td align="center">Patreon</td>
+								<td align="center"><a href="https://www.patreon.com/sapphire_project">Click Here</a></td>
+							</tr>
+							<tr>
+								<td align="center">PayPal</td>
+								<td align="center"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=SP738BQTQQYZY">Click Here</a></td>
+							</tr>
+					</tbody></table>
+					<a href="#contributors-✨" id="contributors-✨" style="color: inherit; text-decoration: none;">
+						<h2>Contributors ✨</h2>
+					</a>
+					<p>Thanks goes to these wonderful people (<a href="https://allcontributors.org/docs/en/emoji-key">emoji key</a>):</p>
+					<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+					<!-- prettier-ignore-start -->
+					<!-- markdownlint-disable -->
+					<table>
+						<tr>
+							<td align="center"><a href="https://favware.tech/"><img src="https://avatars3.githubusercontent.com/u/4019718?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jeroen Claassens</b></sub></a><br /><a href="https://github.com/sapphire-project/plugins/commits?author=Favna" title="Code">💻</a> <a href="#infra-Favna" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#projectManagement-Favna" title="Project Management">📆</a></td>
+							<td align="center"><a href="https://quantumlytangled.com"><img src="https://avatars1.githubusercontent.com/u/7919610?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nejc Drobnic</b></sub></a><br /><a href="https://github.com/sapphire-project/plugins/commits?author=QuantumlyTangled" title="Code">💻</a> <a href="https://github.com/sapphire-project/plugins/commits?author=QuantumlyTangled" title="Documentation">📖</a></td>
+						</tr>
+					</table>
+					<!-- markdownlint-restore -->
+					<!-- prettier-ignore-end -->
+					<!-- ALL-CONTRIBUTORS-LIST:END -->
+					<p>This project follows the <a href="https://github.com/all-contributors/all-contributors">all-contributors</a> specification. Contributions of any kind welcome!</p>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Enumerations</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum tsd-parent-kind-module"><a href="../enums/_sapphire_plugin_logger.loggerstylebackground.html" class="tsd-kind-icon">Logger<wbr>Style<wbr>Background</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-module"><a href="../enums/_sapphire_plugin_logger.loggerstyleeffect.html" class="tsd-kind-icon">Logger<wbr>Style<wbr>Effect</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-module"><a href="../enums/_sapphire_plugin_logger.loggerstyletext.html" class="tsd-kind-icon">Logger<wbr>Style<wbr>Text</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_sapphire_plugin_logger.logger.html" class="tsd-kind-icon">Logger</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_sapphire_plugin_logger.loggerlevel.html" class="tsd-kind-icon">Logger<wbr>Level</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_sapphire_plugin_logger.loggerstyle.html" class="tsd-kind-icon">Logger<wbr>Style</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_sapphire_plugin_logger.loggertimestamp.html" class="tsd-kind-icon">Logger<wbr>Timestamp</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_sapphire_plugin_logger.loggerformatoptions.html" class="tsd-kind-icon">Logger<wbr>Format<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_sapphire_plugin_logger.loggerleveloptions.html" class="tsd-kind-icon">Logger<wbr>Level<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_sapphire_plugin_logger.loggeroptions.html" class="tsd-kind-icon">Logger<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_sapphire_plugin_logger.loggerstyleoptions.html" class="tsd-kind-icon">Logger<wbr>Style<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_sapphire_plugin_logger.loggertimestampformatter.html" class="tsd-kind-icon">Logger<wbr>Timestamp<wbr>Formatter</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_sapphire_plugin_logger.loggertimestampoptions.html" class="tsd-kind-icon">Logger<wbr>Timestamp<wbr>Options</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_sapphire_plugin_logger.html#loggerstyleresolvable" class="tsd-kind-icon">Logger<wbr>Style<wbr>Resolvable</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="loggerstyleresolvable" class="tsd-anchor"></a>
+					<h3>Logger<wbr>Style<wbr>Resolvable</h3>
+					<div class="tsd-signature tsd-kind-icon">Logger<wbr>Style<wbr>Resolvable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Style</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_sapphire_plugin_logger.loggerstyleoptions.html" class="tsd-signature-type">LoggerStyleOptions</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/ad972c5/packages/logger/src/lib/LoggerStyle.ts#L66">packages/logger/src/lib/LoggerStyle.ts:66</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The value accepted by <a href="../classes/_sapphire_plugin_logger.loggerstyle.html">LoggerStyle</a>&#39;s constructor. Read <code>colorette</code>&#39;s documentation for more information.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+							<dt>seealso</dt>
+							<dd><p><a href="https://www.npmjs.com/package/colorette">https://www.npmjs.com/package/colorette</a></p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_sapphire_plugin_api.html">@sapphire/plugin-<wbr>api</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="_sapphire_plugin_logger.html">@sapphire/plugin-<wbr>logger</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/_sapphire_plugin_logger.loggerstylebackground.html" class="tsd-kind-icon">Logger<wbr>Style<wbr>Background</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/_sapphire_plugin_logger.loggerstyleeffect.html" class="tsd-kind-icon">Logger<wbr>Style<wbr>Effect</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/_sapphire_plugin_logger.loggerstyletext.html" class="tsd-kind-icon">Logger<wbr>Style<wbr>Text</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_sapphire_plugin_logger.logger.html" class="tsd-kind-icon">Logger</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_sapphire_plugin_logger.loggerlevel.html" class="tsd-kind-icon">Logger<wbr>Level</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_sapphire_plugin_logger.loggerstyle.html" class="tsd-kind-icon">Logger<wbr>Style</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_sapphire_plugin_logger.loggertimestamp.html" class="tsd-kind-icon">Logger<wbr>Timestamp</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_sapphire_plugin_logger.loggerformatoptions.html" class="tsd-kind-icon">Logger<wbr>Format<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_sapphire_plugin_logger.loggerleveloptions.html" class="tsd-kind-icon">Logger<wbr>Level<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_sapphire_plugin_logger.loggeroptions.html" class="tsd-kind-icon">Logger<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_sapphire_plugin_logger.loggerstyleoptions.html" class="tsd-kind-icon">Logger<wbr>Style<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_sapphire_plugin_logger.loggertimestampformatter.html" class="tsd-kind-icon">Logger<wbr>Timestamp<wbr>Formatter</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_sapphire_plugin_logger.loggertimestampoptions.html" class="tsd-kind-icon">Logger<wbr>Timestamp<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="_sapphire_plugin_logger.html#loggerstyleresolvable" class="tsd-kind-icon">Logger<wbr>Style<wbr>Resolvable</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

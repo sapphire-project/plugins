@@ -101,8 +101,8 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_sapphire_plugin_api.server.html#auth" class="tsd-kind-icon">auth</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sapphire_plugin_api.server.html#client" class="tsd-kind-icon">client</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_sapphire_plugin_api.server.html#middlewares" class="tsd-kind-icon">middlewares</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_sapphire_plugin_api.server.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_sapphire_plugin_api.server.html#routes" class="tsd-kind-icon">routes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_sapphire_plugin_api.server.html#server" class="tsd-kind-icon">server</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_sapphire_plugin_api.server.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
@@ -141,14 +141,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Server<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SapphireClient</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_api.server.html" class="tsd-signature-type">Server</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Server<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>auth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_sapphire_plugin_api.serveroptionsauth.html" class="tsd-signature-type">ServerOptionsAuth</a><span class="tsd-signature-symbol">; </span>options<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">options</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_api.server.html" class="tsd-signature-type">Server</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L40">packages/api/src/lib/structures/http/Server.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/ad972c5/packages/api/src/lib/structures/http/Server.ts#L53">packages/api/src/lib/structures/http/Server.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -161,12 +161,18 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>client: <span class="tsd-signature-type">SapphireClient</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The @sapphire/framework Client instance</p>
-										</div>
-									</div>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> __namedParameters: <span class="tsd-signature-symbol">{ </span>auth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_sapphire_plugin_api.serveroptionsauth.html" class="tsd-signature-type">ServerOptionsAuth</a><span class="tsd-signature-symbol">; </span>options<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">options</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>auth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_sapphire_plugin_api.serveroptionsauth.html" class="tsd-signature-type">ServerOptionsAuth</a></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>options<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">options</a></h5>
+											<div class="tsd-comment tsd-typography">
+												<p>The options for this server</p>
+											</div>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_sapphire_plugin_api.server.html" class="tsd-signature-type">Server</a></h4>
@@ -182,22 +188,12 @@
 					<div class="tsd-signature tsd-kind-icon">auth<span class="tsd-signature-symbol">:</span> <a href="_sapphire_plugin_api.auth.html" class="tsd-signature-type">Auth</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L28">packages/api/src/lib/structures/http/Server.ts:28</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="client" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> client</h3>
-					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SapphireClient</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L40">packages/api/src/lib/structures/http/Server.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/ad972c5/packages/api/src/lib/structures/http/Server.ts#L41">packages/api/src/lib/structures/http/Server.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The managing Client instance on which this Server instance is mounted.</p>
+							<p>The authentication system.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>since</dt>
@@ -212,9 +208,39 @@
 					<div class="tsd-signature tsd-kind-icon">middlewares<span class="tsd-signature-symbol">:</span> <a href="_sapphire_plugin_api.middlewarestore.html" class="tsd-signature-type">MiddlewareStore</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L26">packages/api/src/lib/structures/http/Server.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/ad972c5/packages/api/src/lib/structures/http/Server.ts#L35">packages/api/src/lib/structures/http/Server.ts:35</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The middlewares this server holds.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="options" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../modules/_sapphire_plugin_api.html#authlessserveroptions" class="tsd-signature-type">AuthLessServerOptions</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/ad972c5/packages/api/src/lib/structures/http/Server.ts#L53">packages/api/src/lib/structures/http/Server.ts:53</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The options for this server.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="routes" class="tsd-anchor"></a>
@@ -222,9 +248,19 @@
 					<div class="tsd-signature tsd-kind-icon">routes<span class="tsd-signature-symbol">:</span> <a href="_sapphire_plugin_api.routestore.html" class="tsd-signature-type">RouteStore</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L24">packages/api/src/lib/structures/http/Server.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/ad972c5/packages/api/src/lib/structures/http/Server.ts#L29">packages/api/src/lib/structures/http/Server.ts:29</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The routes this server holds.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="server" class="tsd-anchor"></a>
@@ -232,7 +268,7 @@
 					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HttpServer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L34">packages/api/src/lib/structures/http/Server.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/ad972c5/packages/api/src/lib/structures/http/Server.ts#L47">packages/api/src/lib/structures/http/Server.ts:47</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -336,7 +372,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L64">packages/api/src/lib/structures/http/Server.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/ad972c5/packages/api/src/lib/structures/http/Server.ts#L79">packages/api/src/lib/structures/http/Server.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -353,7 +389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/a647112/packages/api/src/lib/structures/http/Server.ts#L99">packages/api/src/lib/structures/http/Server.ts:99</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/ad972c5/packages/api/src/lib/structures/http/Server.ts#L114">packages/api/src/lib/structures/http/Server.ts:114</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -396,7 +432,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_sapphire_plugin_api.apiresponse.html">ApiResponse</a>.<a href="_sapphire_plugin_api.apiresponse.html#eventnames">eventNames</a></p>
+								<p>Inherited from <a href="_sapphire_plugin_api.apirequest.html">ApiRequest</a>.<a href="_sapphire_plugin_api.apirequest.html#eventnames">eventNames</a></p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:77</li>
 								</ul>
@@ -414,7 +450,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_sapphire_plugin_api.apiresponse.html">ApiResponse</a>.<a href="_sapphire_plugin_api.apiresponse.html#getmaxlisteners">getMaxListeners</a></p>
+								<p>Inherited from <a href="_sapphire_plugin_api.apirequest.html">ApiRequest</a>.<a href="_sapphire_plugin_api.apirequest.html#getmaxlisteners">getMaxListeners</a></p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:69</li>
 								</ul>
@@ -432,7 +468,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_sapphire_plugin_api.apiresponse.html">ApiResponse</a>.<a href="_sapphire_plugin_api.apiresponse.html#listenercount">listenerCount</a></p>
+								<p>Inherited from <a href="_sapphire_plugin_api.apirequest.html">ApiRequest</a>.<a href="_sapphire_plugin_api.apirequest.html#listenercount">listenerCount</a></p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:73</li>
 								</ul>
@@ -456,7 +492,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_sapphire_plugin_api.apiresponse.html">ApiResponse</a>.<a href="_sapphire_plugin_api.apiresponse.html#listeners">listeners</a></p>
+								<p>Inherited from <a href="_sapphire_plugin_api.apirequest.html">ApiRequest</a>.<a href="_sapphire_plugin_api.apirequest.html#listeners">listeners</a></p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:70</li>
 								</ul>
@@ -480,7 +516,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_sapphire_plugin_api.apiresponse.html">ApiResponse</a>.<a href="_sapphire_plugin_api.apiresponse.html#off">off</a></p>
+								<p>Inherited from <a href="_sapphire_plugin_api.apirequest.html">ApiRequest</a>.<a href="_sapphire_plugin_api.apirequest.html#off">off</a></p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:66</li>
 								</ul>
@@ -705,7 +741,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_sapphire_plugin_api.apiresponse.html">ApiResponse</a>.<a href="_sapphire_plugin_api.apiresponse.html#rawlisteners">rawListeners</a></p>
+								<p>Inherited from <a href="_sapphire_plugin_api.apirequest.html">ApiRequest</a>.<a href="_sapphire_plugin_api.apirequest.html#rawlisteners">rawListeners</a></p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:71</li>
 								</ul>
@@ -729,7 +765,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_sapphire_plugin_api.apiresponse.html">ApiResponse</a>.<a href="_sapphire_plugin_api.apiresponse.html#removealllisteners">removeAllListeners</a></p>
+								<p>Inherited from <a href="_sapphire_plugin_api.apirequest.html">ApiRequest</a>.<a href="_sapphire_plugin_api.apirequest.html#removealllisteners">removeAllListeners</a></p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:67</li>
 								</ul>
@@ -798,7 +834,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_sapphire_plugin_api.apiresponse.html">ApiResponse</a>.<a href="_sapphire_plugin_api.apiresponse.html#setmaxlisteners">setMaxListeners</a></p>
+								<p>Inherited from <a href="_sapphire_plugin_api.apirequest.html">ApiRequest</a>.<a href="_sapphire_plugin_api.apirequest.html#setmaxlisteners">setMaxListeners</a></p>
 								<ul>
 									<li>Defined in node_modules/@types/node/events.d.ts:68</li>
 								</ul>
@@ -858,85 +894,13 @@
 					<li class="current tsd-kind-module">
 						<a href="../modules/_sapphire_plugin_api.html">@sapphire/plugin-<wbr>api</a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_sapphire_plugin_logger.html">@sapphire/plugin-<wbr>logger</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/_sapphire_plugin_api.httpcodes.html" class="tsd-kind-icon">Http<wbr>Codes</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/_sapphire_plugin_api.mimetypes.html" class="tsd-kind-icon">Mime<wbr>Types</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/_sapphire_plugin_api.serverevents.html" class="tsd-kind-icon">Server<wbr>Events</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/_sapphire_plugin_api.typestate.html" class="tsd-kind-icon">Type<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.api.html" class="tsd-kind-icon">Api</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.apirequest.html" class="tsd-kind-icon">Api<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.apiresponse.html" class="tsd-kind-icon">Api<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.auth.html" class="tsd-kind-icon">Auth</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.cookiestore.html" class="tsd-kind-icon">Cookie<wbr>Store</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.middleware.html" class="tsd-kind-icon">Middleware</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.middlewarestore.html" class="tsd-kind-icon">Middleware<wbr>Store</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.pluginevent.html" class="tsd-kind-icon">Plugin<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.pluginevent-1.html" class="tsd-kind-icon">Plugin<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.pluginevent-2.html" class="tsd-kind-icon">Plugin<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.pluginevent-3.html" class="tsd-kind-icon">Plugin<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.pluginevent-4.html" class="tsd-kind-icon">Plugin<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.pluginmiddleware.html" class="tsd-kind-icon">Plugin<wbr>Middleware</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.pluginmiddleware-1.html" class="tsd-kind-icon">Plugin<wbr>Middleware</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.pluginmiddleware-2.html" class="tsd-kind-icon">Plugin<wbr>Middleware</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.pluginmiddleware-3.html" class="tsd-kind-icon">Plugin<wbr>Middleware</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.pluginroute.html" class="tsd-kind-icon">Plugin<wbr>Route</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.pluginroute-1.html" class="tsd-kind-icon">Plugin<wbr>Route</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.route.html" class="tsd-kind-icon">Route</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.routedata.html" class="tsd-kind-icon">Route<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.routestore.html" class="tsd-kind-icon">Route<wbr>Store</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
@@ -948,11 +912,11 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_sapphire_plugin_api.server.html#auth" class="tsd-kind-icon">auth</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_sapphire_plugin_api.server.html#client" class="tsd-kind-icon">client</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_sapphire_plugin_api.server.html#middlewares" class="tsd-kind-icon">middlewares</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_sapphire_plugin_api.server.html#options" class="tsd-kind-icon">options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_sapphire_plugin_api.server.html#routes" class="tsd-kind-icon">routes</a>
@@ -1024,45 +988,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.apioptions.html" class="tsd-kind-icon">Api<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.apioptionsauth.html" class="tsd-kind-icon">Api<wbr>Options<wbr>Auth</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.authdata.html" class="tsd-kind-icon">Auth<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.logindata.html" class="tsd-kind-icon">Login<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.methodcallback.html" class="tsd-kind-icon">Method<wbr>Callback</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.middlewareoptions.html" class="tsd-kind-icon">Middleware<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.routematch.html" class="tsd-kind-icon">Route<wbr>Match</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.routeoptions.html" class="tsd-kind-icon">Route<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_sapphire_plugin_api.securecookiestoresetoptions.html" class="tsd-kind-icon">Secure<wbr>Cookie<wbr>Store<wbr>Set<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/_sapphire_plugin_api.html#matchdata" class="tsd-kind-icon">Match<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/_sapphire_plugin_api.html#methods" class="tsd-kind-icon">Methods</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_sapphire_plugin_api.html#methodentries" class="tsd-kind-icon">method<wbr>Entries</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_sapphire_plugin_api.html#methods-1" class="tsd-kind-icon">methods</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -1090,9 +1015,6 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 			</ul>
 		</div>
 	</div>
