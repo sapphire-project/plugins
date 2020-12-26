@@ -149,6 +149,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_sapphire_plugin_api.routestore.html#map" class="tsd-kind-icon">map</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_sapphire_plugin_api.routestore.html#mapvalues" class="tsd-kind-icon">map<wbr>Values</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sapphire_plugin_api.routestore.html#match" class="tsd-kind-icon">match</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_sapphire_plugin_api.routestore.html#parseurl" class="tsd-kind-icon">parseURL</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_sapphire_plugin_api.routestore.html#partition" class="tsd-kind-icon">partition</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_sapphire_plugin_api.routestore.html#random" class="tsd-kind-icon">random</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_sapphire_plugin_api.routestore.html#randomkey" class="tsd-kind-icon">random<wbr>Key</a></li>
@@ -180,7 +181,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides Store.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/986dc5d/packages/api/src/lib/structures/RouteStore.ts#L22">packages/api/src/lib/structures/RouteStore.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/fc479c5/packages/api/src/lib/structures/RouteStore.ts#L24">packages/api/src/lib/structures/RouteStore.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_sapphire_plugin_api.routestore.html" class="tsd-signature-type">RouteStore</a></h4>
@@ -251,7 +252,7 @@
 					<div class="tsd-signature tsd-kind-icon">table<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_sapphire_plugin_api.html#methods" class="tsd-signature-type">Methods</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><a href="_sapphire_plugin_api.route.html" class="tsd-signature-type">Route</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_sapphire_plugin_api.methodcallback.html" class="tsd-signature-type">MethodCallback</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Collection&lt;Methods, Collection&lt;Route, MethodCallback&gt;&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/986dc5d/packages/api/src/lib/structures/RouteStore.ts#L22">packages/api/src/lib/structures/RouteStore.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/fc479c5/packages/api/src/lib/structures/RouteStore.ts#L24">packages/api/src/lib/structures/RouteStore.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -2032,7 +2033,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/986dc5d/packages/api/src/lib/structures/RouteStore.ts#L30">packages/api/src/lib/structures/RouteStore.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/fc479c5/packages/api/src/lib/structures/RouteStore.ts#L32">packages/api/src/lib/structures/RouteStore.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2042,6 +2043,37 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_sapphire_plugin_api.routematch.html" class="tsd-signature-type">RouteMatch</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="parseurl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parseURL</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">parseURL<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>querystring<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>splits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/fc479c5/packages/api/src/lib/structures/RouteStore.ts#L54">packages/api/src/lib/structures/RouteStore.ts:54</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>querystring<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>splits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>querystring<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>splits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -3072,6 +3104,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_sapphire_plugin_api.routestore.html#match" class="tsd-kind-icon">match</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_sapphire_plugin_api.routestore.html#parseurl" class="tsd-kind-icon">parseURL</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 								<a href="_sapphire_plugin_api.routestore.html#partition" class="tsd-kind-icon">partition</a>
 							</li>
@@ -3188,6 +3223,9 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 			</ul>
 		</div>
 	</div>
