@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LoggerStyleOptions | Sapphire Plugins</title>
+	<title>OAuth2BodyData | Sapphire Plugins</title>
 	<meta name="description" content="Documentation for Sapphire Plugins">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,13 +52,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_sapphire_plugin_logger.html">@sapphire/plugin-logger</a>
+					<a href="../modules/_sapphire_plugin_api.html">@sapphire/plugin-api</a>
 				</li>
 				<li>
-					<a href="_sapphire_plugin_logger.loggerstyleoptions.html">LoggerStyleOptions</a>
+					<a href="_sapphire_plugin_api.oauth2bodydata.html">OAuth2BodyData</a>
 				</li>
 			</ul>
-			<h1>Interface LoggerStyleOptions</h1>
+			<h1>Interface OAuth2BodyData</h1>
 		</div>
 	</div>
 </header>
@@ -68,11 +68,11 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The options for <a href="../classes/_sapphire_plugin_logger.loggerstyle.html">LoggerStyle</a>.</p>
+						<p>The OAuth2 body data sent to the callback.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>since</dt>
-						<dd><p>1.0.0</p>
+						<dd><p>1.2.0</p>
 						</dd>
 					</dl>
 				</div>
@@ -81,7 +81,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">LoggerStyleOptions</span>
+						<span class="target">OAuth2BodyData</span>
 					</li>
 				</ul>
 			</section>
@@ -92,9 +92,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_logger.loggerstyleoptions.html#background" class="tsd-kind-icon">background</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_logger.loggerstyleoptions.html#effects" class="tsd-kind-icon">effects</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_logger.loggerstyleoptions.html#text" class="tsd-kind-icon">text</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.oauth2bodydata.html#clientid" class="tsd-kind-icon">client<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.oauth2bodydata.html#code" class="tsd-kind-icon">code</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.oauth2bodydata.html#redirecturi" class="tsd-kind-icon">redirect<wbr>Uri</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,61 +103,61 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="background" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> background</h3>
-					<div class="tsd-signature tsd-kind-icon">background<span class="tsd-signature-symbol">:</span> <a href="../enums/_sapphire_plugin_logger.loggerstylebackground.html" class="tsd-signature-type">LoggerStyleBackground</a></div>
+					<a name="clientid" class="tsd-anchor"></a>
+					<h3>client<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">client<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/d7c4ad4/packages/logger/src/lib/LoggerStyle.ts#L58">packages/logger/src/lib/LoggerStyle.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/d7c4ad4/packages/api/src/routes/oauth/callback.ts#L132">packages/api/src/routes/oauth/callback.ts:132</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The background color, e.g. <code>magenta</code> or <code>red</code>.</p>
+							<p>The client&#39;s ID.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>since</dt>
-							<dd><p>1.0.0</p>
+							<dd><p>1.2.0</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="effects" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> effects</h3>
-					<div class="tsd-signature tsd-kind-icon">effects<span class="tsd-signature-symbol">:</span> <a href="../enums/_sapphire_plugin_logger.loggerstyleeffect.html" class="tsd-signature-type">LoggerStyleEffect</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="code" class="tsd-anchor"></a>
+					<h3>code</h3>
+					<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/d7c4ad4/packages/logger/src/lib/LoggerStyle.ts#L46">packages/logger/src/lib/LoggerStyle.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/d7c4ad4/packages/api/src/routes/oauth/callback.ts#L126">packages/api/src/routes/oauth/callback.ts:126</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The text effects, e.g. <code>italic</code>, <code>strikethrough</code>, etc.</p>
+							<p>The code sent by the client.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>since</dt>
-							<dd><p>1.0.0</p>
+							<dd><p>1.2.0</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="text" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> text</h3>
-					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <a href="../enums/_sapphire_plugin_logger.loggerstyletext.html" class="tsd-signature-type">LoggerStyleText</a></div>
+					<a name="redirecturi" class="tsd-anchor"></a>
+					<h3>redirect<wbr>Uri</h3>
+					<div class="tsd-signature tsd-kind-icon">redirect<wbr>Uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/d7c4ad4/packages/logger/src/lib/LoggerStyle.ts#L52">packages/logger/src/lib/LoggerStyle.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/d7c4ad4/packages/api/src/routes/oauth/callback.ts#L138">packages/api/src/routes/oauth/callback.ts:138</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The text color, e.g. <code>red</code> or <code>yellow</code>.</p>
+							<p>The redirect URI.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>since</dt>
-							<dd><p>1.0.0</p>
+							<dd><p>1.2.0</p>
 							</dd>
 						</dl>
 					</div>
@@ -170,73 +170,34 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_sapphire_plugin_api.html">@sapphire/plugin-<wbr>api</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_sapphire_plugin_logger.html">@sapphire/plugin-<wbr>logger</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/_sapphire_plugin_logger.loggerstylebackground.html" class="tsd-kind-icon">Logger<wbr>Style<wbr>Background</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/_sapphire_plugin_logger.loggerstyleeffect.html" class="tsd-kind-icon">Logger<wbr>Style<wbr>Effect</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/_sapphire_plugin_logger.loggerstyletext.html" class="tsd-kind-icon">Logger<wbr>Style<wbr>Text</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_sapphire_plugin_logger.logger.html" class="tsd-kind-icon">Logger</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_sapphire_plugin_logger.loggerlevel.html" class="tsd-kind-icon">Logger<wbr>Level</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_sapphire_plugin_logger.loggerstyle.html" class="tsd-kind-icon">Logger<wbr>Style</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_sapphire_plugin_logger.loggertimestamp.html" class="tsd-kind-icon">Logger<wbr>Timestamp</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_sapphire_plugin_logger.loggerformatoptions.html" class="tsd-kind-icon">Logger<wbr>Format<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_sapphire_plugin_logger.loggerleveloptions.html" class="tsd-kind-icon">Logger<wbr>Level<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_sapphire_plugin_logger.loggeroptions.html" class="tsd-kind-icon">Logger<wbr>Options</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_sapphire_plugin_logger.loggerstyleoptions.html" class="tsd-kind-icon">Logger<wbr>Style<wbr>Options</a>
+						<a href="_sapphire_plugin_api.oauth2bodydata.html" class="tsd-kind-icon">OAuth2<wbr>Body<wbr>Data</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sapphire_plugin_logger.loggerstyleoptions.html#background" class="tsd-kind-icon">background</a>
+								<a href="_sapphire_plugin_api.oauth2bodydata.html#clientid" class="tsd-kind-icon">client<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sapphire_plugin_logger.loggerstyleoptions.html#effects" class="tsd-kind-icon">effects</a>
+								<a href="_sapphire_plugin_api.oauth2bodydata.html#code" class="tsd-kind-icon">code</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sapphire_plugin_logger.loggerstyleoptions.html#text" class="tsd-kind-icon">text</a>
+								<a href="_sapphire_plugin_api.oauth2bodydata.html#redirecturi" class="tsd-kind-icon">redirect<wbr>Uri</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_sapphire_plugin_logger.loggertimestampformatter.html" class="tsd-kind-icon">Logger<wbr>Timestamp<wbr>Formatter</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_sapphire_plugin_logger.loggertimestampoptions.html" class="tsd-kind-icon">Logger<wbr>Timestamp<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/_sapphire_plugin_logger.html#loggerstyleresolvable" class="tsd-kind-icon">Logger<wbr>Style<wbr>Resolvable</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
