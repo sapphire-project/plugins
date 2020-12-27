@@ -134,7 +134,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides Event.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/c1c240e/packages/api/src/events/coreServerMiddlewareSuccess.ts#L7">packages/api/src/events/coreServerMiddlewareSuccess.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/bc3c6f6/packages/api/src/events/coreServerMiddlewareError.ts#L5">packages/api/src/events/coreServerMiddlewareError.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -357,29 +357,31 @@
 					<a name="run" class="tsd-anchor"></a>
 					<h3>run</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_api.apirequest.html" class="tsd-signature-type">ApiRequest</a>, response<span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_api.apiresponse.html" class="tsd-signature-type">ApiResponse</a>, match<span class="tsd-signature-symbol">: </span><a href="../interfaces/_sapphire_plugin_api.routematch.html" class="tsd-signature-type">RouteMatch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>response<span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_api.apiresponse.html" class="tsd-signature-type">ApiResponse</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides Event.run</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/c1c240e/packages/api/src/events/coreServerMiddlewareSuccess.ts#L12">packages/api/src/events/coreServerMiddlewareSuccess.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/bc3c6f6/packages/api/src/events/coreServerMiddlewareError.ts#L10">packages/api/src/events/coreServerMiddlewareError.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>request: <a href="_sapphire_plugin_api.apirequest.html" class="tsd-signature-type">ApiRequest</a></h5>
+									<h5>error: <span class="tsd-signature-type">Error</span></h5>
 								</li>
 								<li>
-									<h5>response: <a href="_sapphire_plugin_api.apiresponse.html" class="tsd-signature-type">ApiResponse</a></h5>
-								</li>
-								<li>
-									<h5>match: <a href="../interfaces/_sapphire_plugin_api.routematch.html" class="tsd-signature-type">RouteMatch</a></h5>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>response<span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_api.apiresponse.html" class="tsd-signature-type">ApiResponse</a><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>response<span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_api.apiresponse.html" class="tsd-signature-type">ApiResponse</a></h5>
+										</li>
+									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
