@@ -16,7 +16,7 @@
 
 [![npm](https://img.shields.io/npm/v/@sapphire/plugin-api?color=crimson&logo=npm&style=flat-square&label=@sapphire/plugin-api)](https://www.npmjs.com/package/@sapphire/plugin-api)
 [![npm](https://img.shields.io/npm/v/@sapphire/plugin-logger?color=crimson&logo=npm&style=flat-square&label=@sapphire/plugin-logger)](https://www.npmjs.com/package/@sapphire/plugin-logger)
-[![npm](https://img.shields.io/npm/v/@sapphire/plugin-logger?color=crimson&logo=npm&style=flat-square&label=@sapphire/plugin-i18next)](https://www.npmjs.com/package/@sapphire/plugin-logger)
+[![npm](https://img.shields.io/npm/v/@sapphire/plugin-i18next?color=crimson&logo=npm&style=flat-square&label=@sapphire/plugin-i18next)](https://www.npmjs.com/package/@sapphire/plugin-i18next)
 
 </div>
 
