@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ServerOptions | Sapphire Plugins</title>
+	<title>I18nOptions | Sapphire Plugins</title>
 	<meta name="description" content="Documentation for Sapphire Plugins">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,13 +52,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_sapphire_plugin_api.html">@sapphire/plugin-api</a>
+					<a href="../modules/_sapphire_plugin_i18next.html">@sapphire/plugin-i18next</a>
 				</li>
 				<li>
-					<a href="_sapphire_plugin_api.serveroptions.html">ServerOptions</a>
+					<a href="_sapphire_plugin_i18next.i18noptions-1.html">I18nOptions</a>
 				</li>
 			</ul>
-			<h1>Interface ServerOptions</h1>
+			<h1>Interface I18nOptions</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The API options.</p>
+						<p>The options used in <a href="../modules/_sapphire_plugin_i18next.html#i18nexthandler">I18nextHandler</a>.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>since</dt>
@@ -81,7 +81,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ServerOptions</span>
+						<span class="target">I18nOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -92,12 +92,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.serveroptions.html#auth" class="tsd-kind-icon">auth</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.serveroptions.html#listenoptions" class="tsd-kind-icon">listen<wbr>Options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.serveroptions.html#maximumbodylength" class="tsd-kind-icon">maximum<wbr>Body<wbr>Length</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.serveroptions.html#origin" class="tsd-kind-icon">origin</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.serveroptions.html#prefix" class="tsd-kind-icon">prefix</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.serveroptions.html#server" class="tsd-kind-icon">server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_i18next.i18noptions-1.html#backend" class="tsd-kind-icon">backend</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_i18next.i18noptions-1.html#defaultlanguagedirectory" class="tsd-kind-icon">default<wbr>Language<wbr>Directory</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_i18next.i18noptions-1.html#defaultmissingkey" class="tsd-kind-icon">default<wbr>Missing<wbr>Key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_i18next.i18noptions-1.html#defaultns" class="tsd-kind-icon">defaultNS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_i18next.i18noptions-1.html#defaultname" class="tsd-kind-icon">default<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_i18next.i18noptions-1.html#i18next" class="tsd-kind-icon">i18next</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,140 +106,125 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="auth" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> auth</h3>
-					<div class="tsd-signature tsd-kind-icon">auth<span class="tsd-signature-symbol">:</span> <a href="_sapphire_plugin_api.serveroptionsauth.html" class="tsd-signature-type">ServerOptionsAuth</a></div>
+					<a name="backend" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> backend</h3>
+					<div class="tsd-signature tsd-kind-icon">backend<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">i18nextFsBackend.i18nextFsBackendOptions</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/41e6581/packages/api/src/lib/structures/http/Server.ts#L168">packages/api/src/lib/structures/http/Server.ts:168</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/41e6581/packages/i18next/src/lib/types/options.ts#L20">packages/i18next/src/lib/types/options.ts:20</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The auth options. If neither <code>auth</code> nor <code>auth.secret</code> are defined, auth-related routes and middlewares will be
-							automatically disabled.</p>
+							<p>The options passed to <code>backend</code> in <code>i18next.init</code>.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>since</dt>
 							<dd><p>1.0.0</p>
-							</dd>
-							<dt>default</dt>
-							<dd><p>{}</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="listenoptions" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> listen<wbr>Options</h3>
-					<div class="tsd-signature tsd-kind-icon">listen<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ListenOptions</span></div>
+					<a name="defaultlanguagedirectory" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> default<wbr>Language<wbr>Directory</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Language<wbr>Directory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/41e6581/packages/api/src/lib/structures/http/Server.ts#L160">packages/api/src/lib/structures/http/Server.ts:160</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/41e6581/packages/i18next/src/lib/types/options.ts#L33">packages/i18next/src/lib/types/options.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The HTTP listen options.</p>
+							<p>The directory in which &quot;i18next-fs-backend&quot; should search for files.
+							Defaults to &quot;<rootDirectory>/languages&quot;.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>since</dt>
 							<dd><p>1.0.0</p>
-							</dd>
-							<dt>default</dt>
-							<dd><p>{ port: 4000 }</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="maximumbodylength" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> maximum<wbr>Body<wbr>Length</h3>
-					<div class="tsd-signature tsd-kind-icon">maximum<wbr>Body<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<a name="defaultmissingkey" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> default<wbr>Missing<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Missing<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/41e6581/packages/api/src/lib/structures/http/Server.ts#L146">packages/api/src/lib/structures/http/Server.ts:146</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/41e6581/packages/i18next/src/lib/types/options.ts#L40">packages/i18next/src/lib/types/options.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>(RFC 7230 3.3.2) The maximum decimal number of octets.</p>
+							<p>The default value to be used if a specific language key isnt found.
+							Defaults to &quot;default:default&quot;.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>since</dt>
 							<dd><p>1.0.0</p>
-							</dd>
-							<dt>default</dt>
-							<dd><p>1024 * 1024 * 50</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="origin" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> origin</h3>
-					<div class="tsd-signature tsd-kind-icon">origin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="defaultns" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> defaultNS</h3>
+					<div class="tsd-signature tsd-kind-icon">defaultNS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/41e6581/packages/api/src/lib/structures/http/Server.ts#L139">packages/api/src/lib/structures/http/Server.ts:139</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/41e6581/packages/i18next/src/lib/types/options.ts#L47">packages/i18next/src/lib/types/options.ts:47</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The origin header to be set on every request at &#39;Access-Control-Allow-Origin&#39;.</p>
+							<p>The default NS that is prefixed to all keys that dont specify it.
+							Defaults to &quot;default&quot;.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>since</dt>
 							<dd><p>1.0.0</p>
-							</dd>
-							<dt>default</dt>
-							<dd><p>&#39;*&#39;</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="prefix" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> prefix</h3>
-					<div class="tsd-signature tsd-kind-icon">prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="defaultname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> default<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/41e6581/packages/api/src/lib/structures/http/Server.ts#L132">packages/api/src/lib/structures/http/Server.ts:132</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/41e6581/packages/i18next/src/lib/types/options.ts#L14">packages/i18next/src/lib/types/options.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The prefix for all routes, e.g. <code>v1/</code>.</p>
+							<p>Used as the default 2nd to last fallback locale if no other is found.
+							It&#39;s only followed by &quot;en-US&quot;.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>since</dt>
 							<dd><p>1.0.0</p>
-							</dd>
-							<dt>default</dt>
-							<dd><p>&#39;&#39;</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="server" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> server</h3>
-					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HttpOptions</span></div>
+					<a name="i18next" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> i18next</h3>
+					<div class="tsd-signature tsd-kind-icon">i18next<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">InitOptions</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/41e6581/packages/api/src/lib/structures/http/Server.ts#L153">packages/api/src/lib/structures/http/Server.ts:153</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/41e6581/packages/i18next/src/lib/types/options.ts#L26">packages/i18next/src/lib/types/options.ts:26</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The HTTP server options.</p>
+							<p>The options passed to <code>i18next.init</code>.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>since</dt>
 							<dd><p>1.0.0</p>
-							</dd>
-							<dt>default</dt>
-							<dd><p>{}</p>
 							</dd>
 						</dl>
 					</div>
@@ -252,10 +237,10 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_sapphire_plugin_api.html">@sapphire/plugin-<wbr>api</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_sapphire_plugin_i18next.html">@sapphire/plugin-<wbr>i18next</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -265,28 +250,37 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18noptions" class="tsd-kind-icon">I18n<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18nexthandler" class="tsd-kind-icon">I18next<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_sapphire_plugin_i18next.i18nexthandler-1.html" class="tsd-kind-icon">I18next<wbr>Handler</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.serveroptions.html" class="tsd-kind-icon">Server<wbr>Options</a>
+						<a href="_sapphire_plugin_i18next.i18noptions-1.html" class="tsd-kind-icon">I18n<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sapphire_plugin_api.serveroptions.html#auth" class="tsd-kind-icon">auth</a>
+								<a href="_sapphire_plugin_i18next.i18noptions-1.html#backend" class="tsd-kind-icon">backend</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sapphire_plugin_api.serveroptions.html#listenoptions" class="tsd-kind-icon">listen<wbr>Options</a>
+								<a href="_sapphire_plugin_i18next.i18noptions-1.html#defaultlanguagedirectory" class="tsd-kind-icon">default<wbr>Language<wbr>Directory</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sapphire_plugin_api.serveroptions.html#maximumbodylength" class="tsd-kind-icon">maximum<wbr>Body<wbr>Length</a>
+								<a href="_sapphire_plugin_i18next.i18noptions-1.html#defaultmissingkey" class="tsd-kind-icon">default<wbr>Missing<wbr>Key</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sapphire_plugin_api.serveroptions.html#origin" class="tsd-kind-icon">origin</a>
+								<a href="_sapphire_plugin_i18next.i18noptions-1.html#defaultns" class="tsd-kind-icon">defaultNS</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sapphire_plugin_api.serveroptions.html#prefix" class="tsd-kind-icon">prefix</a>
+								<a href="_sapphire_plugin_i18next.i18noptions-1.html#defaultname" class="tsd-kind-icon">default<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sapphire_plugin_api.serveroptions.html#server" class="tsd-kind-icon">server</a>
+								<a href="_sapphire_plugin_i18next.i18noptions-1.html#i18next" class="tsd-kind-icon">i18next</a>
 							</li>
 						</ul>
 					</li>
