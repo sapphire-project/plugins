@@ -3,7 +3,7 @@
 	"projectOwner": "sapphire-project",
 	"repoType": "github",
 	"repoHost": "https://github.com",
-	"files": ["README.md", "packages/api/README.md", "packages/logger/README.md"],
+	"files": ["README.md", "packages/api/README.md", "packages/logger/README.md", "packages/i18next/README.md"],
 	"imageSize": 100,
 	"commit": true,
 	"commitConvention": "angular",
