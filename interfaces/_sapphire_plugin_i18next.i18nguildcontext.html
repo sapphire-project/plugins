@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TypeState | Sapphire Plugins</title>
+	<title>I18nGuildContext | Sapphire Plugins</title>
 	<meta name="description" content="Documentation for Sapphire Plugins">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,13 +52,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_sapphire_plugin_api.html">@sapphire/plugin-api</a>
+					<a href="../modules/_sapphire_plugin_i18next.html">@sapphire/plugin-i18next</a>
 				</li>
 				<li>
-					<a href="_sapphire_plugin_api.typestate.html">TypeState</a>
+					<a href="_sapphire_plugin_i18next.i18nguildcontext.html">I18nGuildContext</a>
 				</li>
 			</ul>
-			<h1>Enumeration TypeState</h1>
+			<h1>Interface I18nGuildContext</h1>
 		</div>
 	</div>
 </header>
@@ -67,63 +67,19 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>since</dt>
-						<dd><p>1.0.0</p>
-						</dd>
-					</dl>
+					<div class="lead">
+						<p>Context for the guild, used in fetchLanguage functions.
+						Should be an extension of your framework&#39;s Guild object, or the corresponding I18n extension.</p>
+					</div>
 				</div>
 			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Enumeration members</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.typestate.html#dynamic" class="tsd-kind-icon">Dynamic</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_sapphire_plugin_api.typestate.html#static" class="tsd-kind-icon">Static</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="dynamic" class="tsd-anchor"></a>
-					<h3>Dynamic</h3>
-					<div class="tsd-signature tsd-kind-icon">Dynamic<span class="tsd-signature-symbol">:</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/1849831/packages/api/src/lib/utils/RouteData.ts#L15">packages/api/src/lib/utils/RouteData.ts:15</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="static" class="tsd-anchor"></a>
-					<h3>Static</h3>
-					<div class="tsd-signature tsd-kind-icon">Static<span class="tsd-signature-symbol">:</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/1849831/packages/api/src/lib/utils/RouteData.ts#L10">packages/api/src/lib/utils/RouteData.ts:10</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">I18nGuildContext</span>
+					</li>
+				</ul>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -132,10 +88,10 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_sapphire_plugin_api.html">@sapphire/plugin-<wbr>api</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_sapphire_plugin_i18next.html">@sapphire/plugin-<wbr>i18next</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -145,21 +101,28 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_sapphire_plugin_i18next.i18nexthandler.html" class="tsd-kind-icon">I18next<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18nauthorcontext.html" class="tsd-kind-icon">I18n<wbr>Author<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18nchannelcontext.html" class="tsd-kind-icon">I18n<wbr>Channel<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18ncontext.html" class="tsd-kind-icon">I18n<wbr>Context</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-enum tsd-parent-kind-module">
-						<a href="_sapphire_plugin_api.typestate.html" class="tsd-kind-icon">Type<wbr>State</a>
-						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_sapphire_plugin_api.typestate.html#dynamic" class="tsd-kind-icon">Dynamic</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_sapphire_plugin_api.typestate.html#static" class="tsd-kind-icon">Static</a>
-							</li>
-						</ul>
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18nguildcontext.html" class="tsd-kind-icon">I18n<wbr>Guild<wbr>Context</a>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18noptions.html" class="tsd-kind-icon">I18n<wbr>Options</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

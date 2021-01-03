@@ -81,7 +81,7 @@
 					<a href="#description" id="description" style="color: inherit; text-decoration: none;">
 						<h2>Description</h2>
 					</a>
-					<p>An implementation of i18next&#39;s <a href="https://github.com/i18next/i18next-fs-backend">filesystem backend</a> for Sapphire. It allows you to use a JSON-based <code>languages</code> directory to add internationalization for your bot using <code>SapphireClient</code>&#39;s <code>fetchLanguage</code> hook and a custom message extension, adding features such as <code>sendTranslated</code> and <code>fetchLanguageKey</code>.</p>
+					<p>An implementation of i18next&#39;s <a href="https://github.com/i18next/i18next-fs-backend">filesystem backend</a> for Sapphire. It allows you to use a JSON-based <code>languages</code> directory to add internationalization for your bot using <code>SapphireClient</code>&#39;s <code>fetchLanguage</code> hook and a custom message extension, adding features such as <code>sendTranslated</code> and <code>resolveKey</code>.</p>
 					<a href="#features" id="features" style="color: inherit; text-decoration: none;">
 						<h2>Features</h2>
 					</a>
@@ -102,7 +102,7 @@
 					<pre><code class="language-typescript"><span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;@sapphire/plugin-i18next/register&#x27;</span>;</code></pre>
 					<p>And for discord.js:</p>
 					<pre><code class="language-typescript"><span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;@sapphire/plugin-i18next/register-discordjs&#x27;</span>;</code></pre>
-					<p>It is to be noted that unless you are using discord.js, which has the convenience register to extend the client and message methods for you, you will have to implement your own extensions.</p>
+					<p>It is to be noted that unless you are using discord.js, which has the convenience register to extend the client, guild, channel and message methods for you, you will have to implement your own extensions.</p>
 					<p>This is currently undocumented and not covered by guides, but will be in the future. For now, you may follow the structure of <code>register-discordjs.ts</code> if this is the case for you.</p>
 					<a href="#sapphire-i18next-documentation" id="sapphire-i18next-documentation" style="color: inherit; text-decoration: none;">
 						<h2>Sapphire i18next Documentation</h2>
@@ -177,6 +177,10 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_sapphire_plugin_i18next.i18nauthorcontext.html" class="tsd-kind-icon">I18n<wbr>Author<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_sapphire_plugin_i18next.i18nchannelcontext.html" class="tsd-kind-icon">I18n<wbr>Channel<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_sapphire_plugin_i18next.i18ncontext.html" class="tsd-kind-icon">I18n<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_sapphire_plugin_i18next.i18nguildcontext.html" class="tsd-kind-icon">I18n<wbr>Guild<wbr>Context</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_sapphire_plugin_i18next.i18noptions.html" class="tsd-kind-icon">I18n<wbr>Options</a></li>
 							</ul>
 						</section>
@@ -205,6 +209,18 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/_sapphire_plugin_i18next.i18nexthandler.html" class="tsd-kind-icon">I18next<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_sapphire_plugin_i18next.i18nauthorcontext.html" class="tsd-kind-icon">I18n<wbr>Author<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_sapphire_plugin_i18next.i18nchannelcontext.html" class="tsd-kind-icon">I18n<wbr>Channel<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_sapphire_plugin_i18next.i18ncontext.html" class="tsd-kind-icon">I18n<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_sapphire_plugin_i18next.i18nguildcontext.html" class="tsd-kind-icon">I18n<wbr>Guild<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_sapphire_plugin_i18next.i18noptions.html" class="tsd-kind-icon">I18n<wbr>Options</a>
