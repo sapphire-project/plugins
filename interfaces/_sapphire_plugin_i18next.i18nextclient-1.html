@@ -1,0 +1,320 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>I18nextClient | Sapphire Plugins</title>
+	<meta name="description" content="Documentation for Sapphire Plugins">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Sapphire Plugins</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_sapphire_plugin_i18next.html">@sapphire/plugin-i18next</a>
+				</li>
+				<li>
+					<a href="_sapphire_plugin_i18next.i18nextclient-1.html">I18nextClient</a>
+				</li>
+			</ul>
+			<h1>Interface I18nextClient</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">I18nextClient</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_i18next.i18nextclient-1.html#fetchlanguage" class="tsd-kind-icon">fetch<wbr>Language</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_i18next.i18nextclient-1.html#i18n" class="tsd-kind-icon">i18n</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fetchlanguage" class="tsd-anchor"></a>
+					<h3>fetch<wbr>Language</h3>
+					<div class="tsd-signature tsd-kind-icon">fetch<wbr>Language<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_i18next.i18ncontext-1.html" class="tsd-signature-type">I18nContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/ab48b4a/packages/i18next/src/lib/types/client.ts#L43">packages/i18next/src/lib/types/client.ts:43</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The method to be overriden by the developer.
+								Note: In the event that fetchLanguage is not defined or returns
+							null / undefined, the defaulting from <a href="_sapphire_plugin_i18next.i18nextbaseimplementation-1.html#fetchlanguage">I18nextBaseImplementation.fetchLanguage</a> will be used.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>A string for the desired language or null for no match.</p>
+							</dd>
+							<dt>see</dt>
+							<dd><p><a href="_sapphire_plugin_i18next.i18nextbaseimplementation-1.html#fetchlanguage">I18nextBaseImplementation.fetchLanguage</a></p>
+							</dd>
+							<dt>example</dt>
+							<dd><pre><code class="language-typescript"><span class="hljs-comment">// Always use the same language (no per-guild configuration):</span>
+client.fetchLanguage = <span class="hljs-function">() =&gt;</span> <span class="hljs-string">&#x27;en-US&#x27;</span>;</code></pre>
+							</dd>
+							<dt>example</dt>
+							<dd><pre><code class="language-typescript"><span class="hljs-comment">// Retrieving the language from an SQL database:</span>
+client.fetchLanguage = <span class="hljs-keyword">async</span> (context) =&gt; {
+  <span class="hljs-keyword">const</span> guild = <span class="hljs-keyword">await</span> driver.getOne(<span class="hljs-string">&#x27;SELECT language FROM public.guild WHERE id = $1&#x27;</span>, [context.guild.id]);
+  <span class="hljs-keyword">return</span> guild?.language ?? <span class="hljs-string">&#x27;en-US&#x27;</span>;
+};</code></pre>
+							</dd>
+							<dt>example</dt>
+							<dd><pre><code class="language-typescript"><span class="hljs-comment">// Retrieving the language from an ORM:</span>
+client.fetchLanguage = <span class="hljs-keyword">async</span> (context) =&gt; {
+  <span class="hljs-keyword">const</span> guild = <span class="hljs-keyword">await</span> driver.getRepository(GuildEntity).findOne({ <span class="hljs-attr">id</span>: context.guild.id });
+  <span class="hljs-keyword">return</span> guild?.language ?? <span class="hljs-string">&#x27;en-US&#x27;</span>;
+};</code></pre>
+							</dd>
+							<dt>example</dt>
+							<dd><pre><code class="language-typescript"><span class="hljs-comment">// Retrieving the language on a per channel basis, e.g. per user or guild channel (ORM example but same principles apply):</span>
+client.fetchLanguage = <span class="hljs-keyword">async</span> (context) =&gt; {
+  <span class="hljs-keyword">const</span> channel = <span class="hljs-keyword">await</span> driver.getRepository(ChannelEntity).findOne({ <span class="hljs-attr">id</span>: context.channel.id });
+  <span class="hljs-keyword">return</span> channel?.language ?? <span class="hljs-string">&#x27;en-US&#x27;</span>;
+};</code></pre>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_i18next.i18ncontext-1.html" class="tsd-signature-type">I18nContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>context: <a href="_sapphire_plugin_i18next.i18ncontext-1.html" class="tsd-signature-type">I18nContext</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="i18n" class="tsd-anchor"></a>
+					<h3>i18n</h3>
+					<div class="tsd-signature tsd-kind-icon">i18n<span class="tsd-signature-symbol">:</span> <a href="../classes/_sapphire_plugin_i18next.i18nexthandler-1.html" class="tsd-signature-type">I18nextHandler</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/ab48b4a/packages/i18next/src/lib/types/client.ts#L4">packages/i18next/src/lib/types/client.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_sapphire_plugin_api.html">@sapphire/plugin-<wbr>api</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html">@sapphire/plugin-<wbr>i18next</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_sapphire_plugin_logger.html">@sapphire/plugin-<wbr>logger</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18nauthorcontext" class="tsd-kind-icon">I18n<wbr>Author<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18nchannelcontext" class="tsd-kind-icon">I18n<wbr>Channel<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18ncontext" class="tsd-kind-icon">I18n<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18nguildcontext" class="tsd-kind-icon">I18n<wbr>Guild<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18noptions" class="tsd-kind-icon">I18n<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18nextbaseimplementation" class="tsd-kind-icon">I18next<wbr>Base<wbr>Implementation</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18nextchannelimplementation" class="tsd-kind-icon">I18next<wbr>Channel<wbr>Implementation</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18nextclient" class="tsd-kind-icon">I18next<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18nextclientoptions" class="tsd-kind-icon">I18next<wbr>Client<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18nextguildimplementation" class="tsd-kind-icon">I18next<wbr>Guild<wbr>Implementation</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18nexthandler" class="tsd-kind-icon">I18next<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18nextimplemented" class="tsd-kind-icon">I18next<wbr>Implemented</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18nextmessageimplementation" class="tsd-kind-icon">I18next<wbr>Message<wbr>Implementation</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_sapphire_plugin_i18next.i18nexthandler-1.html" class="tsd-kind-icon">I18next<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18nauthorcontext-1.html" class="tsd-kind-icon">I18n<wbr>Author<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18nchannelcontext-1.html" class="tsd-kind-icon">I18n<wbr>Channel<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18ncontext-1.html" class="tsd-kind-icon">I18n<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18nguildcontext-1.html" class="tsd-kind-icon">I18n<wbr>Guild<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18noptions-1.html" class="tsd-kind-icon">I18n<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18nextbaseimplementation-1.html" class="tsd-kind-icon">I18next<wbr>Base<wbr>Implementation</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18nextchannelimplementation-1.html" class="tsd-kind-icon">I18next<wbr>Channel<wbr>Implementation</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18nextclient-1.html" class="tsd-kind-icon">I18next<wbr>Client</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_sapphire_plugin_i18next.i18nextclient-1.html#fetchlanguage" class="tsd-kind-icon">fetch<wbr>Language</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_sapphire_plugin_i18next.i18nextclient-1.html#i18n" class="tsd-kind-icon">i18n</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18nextclientoptions-1.html" class="tsd-kind-icon">I18next<wbr>Client<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18nextguildimplementation-1.html" class="tsd-kind-icon">I18next<wbr>Guild<wbr>Implementation</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_sapphire_plugin_i18next.i18nextmessageimplementation-1.html" class="tsd-kind-icon">I18next<wbr>Message<wbr>Implementation</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/_sapphire_plugin_i18next.html#i18nextimplemented-1" class="tsd-kind-icon">I18next<wbr>Implemented</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
