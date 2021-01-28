@@ -58,7 +58,7 @@
 					<a href="_sapphire_plugin_api.logindatatransformer.html">LoginDataTransformer</a>
 				</li>
 			</ul>
-			<h1>Interface LoginDataTransformer</h1>
+			<h1>Interface LoginDataTransformer&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -77,6 +77,14 @@
 					</dl>
 				</div>
 			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T<span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_api.logindata.html" class="tsd-signature-type">LoginData</a> = <span class="tsd-signature-type">LoginData</span></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -88,13 +96,13 @@
 			<section class="tsd-panel">
 				<h3 class="tsd-before-signature">Callable</h3>
 				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">__call&lt;T&gt;<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_api.logindata.html" class="tsd-signature-type">LoginData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_api.logindata.html" class="tsd-signature-type">LoginData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Awaited</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/795e875/packages/api/src/lib/structures/http/Auth.ts#L214">packages/api/src/lib/structures/http/Auth.ts:214</a></li>
+								<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/666e0a2/packages/api/src/lib/structures/http/Auth.ts#L238">packages/api/src/lib/structures/http/Auth.ts:238</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -107,19 +115,13 @@
 								</dd>
 							</dl>
 						</div>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>T<span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_api.logindata.html" class="tsd-signature-type">LoginData</a></h4>
-							</li>
-						</ul>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>data: <a href="_sapphire_plugin_api.logindata.html" class="tsd-signature-type">LoginData</a></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Awaited</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
