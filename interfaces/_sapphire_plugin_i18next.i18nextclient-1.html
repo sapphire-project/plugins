@@ -95,7 +95,7 @@
 					<div class="tsd-signature tsd-kind-icon">fetch<wbr>Language<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="_sapphire_plugin_i18next.i18ncontext-1.html" class="tsd-signature-type">I18nContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/6f046f1/packages/i18next/src/lib/types/client.ts#L43">packages/i18next/src/lib/types/client.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/397ff4b/packages/i18next/src/lib/types/client.ts#L43">packages/i18next/src/lib/types/client.ts:43</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -116,28 +116,32 @@
 							</dd>
 							<dt>example</dt>
 							<dd><pre><code class="language-typescript"><span class="hljs-comment">// Always use the same language (no per-guild configuration):</span>
-client.fetchLanguage = <span class="hljs-function">() =&gt;</span> <span class="hljs-string">&#x27;en-US&#x27;</span>;</code></pre>
+client.fetchLanguage = <span class="hljs-function">() =&gt;</span> <span class="hljs-string">&#x27;en-US&#x27;</span>;
+</code></pre>
 							</dd>
 							<dt>example</dt>
 							<dd><pre><code class="language-typescript"><span class="hljs-comment">// Retrieving the language from an SQL database:</span>
 client.fetchLanguage = <span class="hljs-keyword">async</span> (context) =&gt; {
   <span class="hljs-keyword">const</span> guild = <span class="hljs-keyword">await</span> driver.getOne(<span class="hljs-string">&#x27;SELECT language FROM public.guild WHERE id = $1&#x27;</span>, [context.guild.id]);
   <span class="hljs-keyword">return</span> guild?.language ?? <span class="hljs-string">&#x27;en-US&#x27;</span>;
-};</code></pre>
+};
+</code></pre>
 							</dd>
 							<dt>example</dt>
 							<dd><pre><code class="language-typescript"><span class="hljs-comment">// Retrieving the language from an ORM:</span>
 client.fetchLanguage = <span class="hljs-keyword">async</span> (context) =&gt; {
   <span class="hljs-keyword">const</span> guild = <span class="hljs-keyword">await</span> driver.getRepository(GuildEntity).findOne({ <span class="hljs-attr">id</span>: context.guild.id });
   <span class="hljs-keyword">return</span> guild?.language ?? <span class="hljs-string">&#x27;en-US&#x27;</span>;
-};</code></pre>
+};
+</code></pre>
 							</dd>
 							<dt>example</dt>
 							<dd><pre><code class="language-typescript"><span class="hljs-comment">// Retrieving the language on a per channel basis, e.g. per user or guild channel (ORM example but same principles apply):</span>
 client.fetchLanguage = <span class="hljs-keyword">async</span> (context) =&gt; {
   <span class="hljs-keyword">const</span> channel = <span class="hljs-keyword">await</span> driver.getRepository(ChannelEntity).findOne({ <span class="hljs-attr">id</span>: context.channel.id });
   <span class="hljs-keyword">return</span> channel?.language ?? <span class="hljs-string">&#x27;en-US&#x27;</span>;
-};</code></pre>
+};
+</code></pre>
 							</dd>
 						</dl>
 					</div>
@@ -169,7 +173,7 @@ client.fetchLanguage = <span class="hljs-keyword">async</span> (context) =&gt; {
 					<div class="tsd-signature tsd-kind-icon">i18n<span class="tsd-signature-symbol">:</span> <a href="../classes/_sapphire_plugin_i18next.i18nexthandler-1.html" class="tsd-signature-type">I18nextHandler</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/6f046f1/packages/i18next/src/lib/types/client.ts#L4">packages/i18next/src/lib/types/client.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/397ff4b/packages/i18next/src/lib/types/client.ts#L4">packages/i18next/src/lib/types/client.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
