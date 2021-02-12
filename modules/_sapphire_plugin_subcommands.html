@@ -1,0 +1,381 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@sapphire/plugin-subcommands | Sapphire Plugins</title>
+	<meta name="description" content="Documentation for Sapphire Plugins">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Sapphire Plugins</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="_sapphire_plugin_subcommands.html">@sapphire/plugin-subcommands</a>
+				</li>
+			</ul>
+			<h1>Module @sapphire/plugin-subcommands</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div align="center">
+						<p><img src="https://cdn.skyra.pw/gh-assets/sapphire.png" alt="Sapphire Logo"></p>
+						<a href="#sapphireplugin-subcommands" id="sapphireplugin-subcommands" style="color: inherit; text-decoration: none;">
+							<h1>@sapphire/plugin-subcommands</h1>
+						</a>
+						<p><strong>Plugin for <a href="https://github.com/sapphire-project/framework">@sapphire/framework</a> so your commands can have subcommands.</strong></p>
+						<p><a href="https://github.com/sapphire-project/plugins/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/sapphire-project/plugins" alt="GitHub"></a>
+							<a href="https://lgtm.com/projects/g/sapphire-project/plugins/alerts/"><img src="https://img.shields.io/lgtm/alerts/g/sapphire-project/plugins.svg?logo=lgtm&logoWidth=18" alt="Total alerts"></a>
+							<a href="https://lgtm.com/projects/g/sapphire-project/plugins/context:javascript"><img src="https://img.shields.io/lgtm/grade/javascript/g/sapphire-project/plugins.svg?logo=lgtm&logoWidth=18" alt="Language grade: JavaScript"></a>
+							<a href="https://coveralls.io/github/sapphire-project/plugins?branch=main"><img src="https://coveralls.io/repos/github/sapphire-project/plugins/badge.svg?branch=main" alt="Coverage Status"></a>
+							<a href="https://bundlephobia.com/result?p=@sapphire/plugin-subcommands"><img src="https://img.shields.io/bundlephobia/min/@sapphire/plugin-subcommands?logo=webpack&style=flat-square" alt="npm bundle size"></a>
+							<a href="https://www.npmjs.com/package/@sapphire/plugin-subcommands"><img src="https://img.shields.io/npm/v/@sapphire/plugin-subcommands?color=crimson&logo=npm&style=flat-square" alt="npm"></a>
+						<a href="https://depfu.com/github/sapphire-project/plugins?project_id=15201"><img src="https://badges.depfu.com/badges/11bbf7392987e6fd51fc6559e1d42dfc/count.svg" alt="Depfu"></a></p>
+					</div>
+					<a href="#description" id="description" style="color: inherit; text-decoration: none;">
+						<h2>Description</h2>
+					</a>
+					<p>Subcommands are a way to split 1 command into multiple. This can in particular be very useful for configuration commands with subcommands such as <code>set</code>, <code>reset</code> and <code>remove</code>.</p>
+					<a href="#features" id="features" style="color: inherit; text-decoration: none;">
+						<h2>Features</h2>
+					</a>
+					<ul>
+						<li>  Fully ready for TypeScript!</li>
+						<li>  Includes ESM ready entrypoint</li>
+						<li>  Type generics for easy extension in TypeScript</li>
+						<li>  Input/Output mapping</li>
+					</ul>
+					<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+						<h2>Installation</h2>
+					</a>
+					<pre><code class="language-sh">yarn add -D @sapphire/plugin-subcommands
+</code></pre>
+					<hr>
+					<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+						<h2>Usage</h2>
+					</a>
+					<p><em>With TypeScript:</em></p>
+					<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { SubCommandPluginCommand } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@sapphire/plugin-subcommands&#x27;</span>;
+<span class="hljs-keyword">import</span> { ApplyOptions } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@sapphire/decorators&#x27;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-keyword">type</span> { Args } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@sapphire/framework&#x27;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-keyword">type</span> { Message } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;discord.js&#x27;</span>;
+
+<span class="hljs-comment">// Using ApplyOptions decorator makes it easy to configure</span>
+<span class="hljs-meta">@ApplyOptions</span>&lt;SubCommandPluginCommand.Options&gt;({
+    <span class="hljs-attr">subCommands</span>: [<span class="hljs-string">&#x27;add&#x27;</span>, <span class="hljs-string">&#x27;remove&#x27;</span>, <span class="hljs-string">&#x27;list&#x27;</span>, <span class="hljs-string">&#x27;reset&#x27;</span>, { <span class="hljs-attr">input</span>: <span class="hljs-string">&#x27;show&#x27;</span>, <span class="hljs-attr">default</span>: <span class="hljs-literal">true</span> }]
+})
+<span class="hljs-comment">// Extend `SubCommandPluginCommand` instead of `Command`</span>
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserCommand</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SubCommandPluginCommand</span> </span>{
+    <span class="hljs-comment">// Do not include a `run` method, each method name should match with the subcommand names</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">add</span>(<span class="hljs-params">message: Message, args: Args</span>)</span> {}
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">remove</span>(<span class="hljs-params">message: Message, args: Args</span>)</span> {}
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">list</span>(<span class="hljs-params">message: Message, args: Args</span>)</span> {}
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">reset</span>(<span class="hljs-params">message: Message, args: Args</span>)</span> {}
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">show</span>(<span class="hljs-params">message: Message, args: Args</span>)</span> {}
+}
+</code></pre>
+					<p><em>With JavaScript:</em></p>
+					<pre><code class="language-javascript">
+<span class="hljs-keyword">const</span> { SubCommandPluginCommand } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;@sapphire/plugin-subcommands&#x27;</span>);
+
+<span class="hljs-comment">// Extend `SubCommandPluginCommand` instead of `Command`</span>
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserCommand</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SubCommandPluginCommand</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">context, options</span>)</span> {
+        <span class="hljs-built_in">super</span>(context, {
+                ...options,
+                <span class="hljs-attr">subCommands</span>: [<span class="hljs-string">&#x27;add&#x27;</span>, <span class="hljs-string">&#x27;remove&#x27;</span>, <span class="hljs-string">&#x27;list&#x27;</span>, <span class="hljs-string">&#x27;reset&#x27;</span>, { <span class="hljs-attr">input</span>: <span class="hljs-string">&#x27;show&#x27;</span>, <span class="hljs-attr">default</span>: <span class="hljs-literal">true</span> }]
+            }
+        )
+    }
+
+    <span class="hljs-comment">// Do not include a `run` method, each method name should match with the subcommand names</span>
+    public <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">add</span>(<span class="hljs-params">message, args</span>)</span> {}
+
+    public <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">remove</span>(<span class="hljs-params">message, args</span>)</span> {}
+
+    public <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">list</span>(<span class="hljs-params">message, args</span>)</span> {}
+
+    public <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">reset</span>(<span class="hljs-params">message, args</span>)</span> {}
+
+    public <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">show</span>(<span class="hljs-params">message, args</span>)</span> {}
+}
+</code></pre>
+					<a href="#subcommands-documentation" id="subcommands-documentation" style="color: inherit; text-decoration: none;">
+						<h2>SubCommands Documentation</h2>
+					</a>
+					<p>For the full @sapphire/plugin-subcommands documentation please refer to the TypeDoc generated <a href="https://sapphire-project.github.io/plugins/modules/_sapphire_plugin_subcommands.html">documentation</a>.</p>
+					<a href="#buy-us-some-doughnuts" id="buy-us-some-doughnuts" style="color: inherit; text-decoration: none;">
+						<h2>Buy us some doughnuts</h2>
+					</a>
+					<p>Sapphire Project is and always will be open source, even if we don&#39;t get donations. That being said, we know there are amazing people who may still want to donate just to show their appreciation. Thank you very much in advance!</p>
+					<p>We accept donations through Open Collective, Ko-fi, Paypal, Patreon and GitHub Sponsorships. You can use the buttons below to donate through your method of choice.</p>
+					<table>
+						<thead>
+							<tr>
+								<th align="center">Donate With</th>
+								<th align="center">Address</th>
+							</tr>
+						</thead>
+						<tbody><tr>
+								<td align="center">Open Collective</td>
+								<td align="center"><a href="https://opencollective.com/sapphire-project">Click Here</a></td>
+							</tr>
+							<tr>
+								<td align="center">Ko-fi</td>
+								<td align="center"><a href="https://ko-fi.com/sapphireproject">Click Here</a></td>
+							</tr>
+							<tr>
+								<td align="center">Patreon</td>
+								<td align="center"><a href="https://www.patreon.com/sapphire_project">Click Here</a></td>
+							</tr>
+							<tr>
+								<td align="center">PayPal</td>
+								<td align="center"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=SP738BQTQQYZY">Click Here</a></td>
+							</tr>
+					</tbody></table>
+					<a href="#contributors-✨" id="contributors-✨" style="color: inherit; text-decoration: none;">
+						<h2>Contributors ✨</h2>
+					</a>
+					<p>Thanks goes to these wonderful people (<a href="https://allcontributors.org/docs/en/emoji-key">emoji key</a>):</p>
+					<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+					<!-- prettier-ignore-start -->
+					<!-- markdownlint-disable -->
+					<table>
+						<tr>
+							<td align="center"><a href="https://favware.tech/"><img src="https://avatars3.githubusercontent.com/u/4019718?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jeroen Claassens</b></sub></a><br /><a href="https://github.com/sapphire-project/plugins/commits?author=Favna" title="Code">💻</a> <a href="#infra-Favna" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#projectManagement-Favna" title="Project Management">📆</a></td>
+							<td align="center"><a href="https://quantumlytangled.com"><img src="https://avatars1.githubusercontent.com/u/7919610?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nejc Drobnic</b></sub></a><br /><a href="https://github.com/sapphire-project/plugins/commits?author=QuantumlyTangled" title="Code">💻</a> <a href="https://github.com/sapphire-project/plugins/commits?author=QuantumlyTangled" title="Documentation">📖</a></td>
+							<td align="center"><a href="https://github.com/kyranet"><img src="https://avatars0.githubusercontent.com/u/24852502?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Antonio Román</b></sub></a><br /><a href="https://github.com/sapphire-project/plugins/commits?author=kyranet" title="Code">💻</a></td>
+							<td align="center"><a href="https://github.com/vladfrangu"><img src="https://avatars3.githubusercontent.com/u/17960496?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vlad Frangu</b></sub></a><br /><a href="https://github.com/sapphire-project/plugins/pulls?q=is%3Apr+reviewed-by%3Avladfrangu" title="Reviewed Pull Requests">👀</a></td>
+							<td align="center"><a href="https://github.com/apps/depfu"><img src="https://avatars3.githubusercontent.com/in/715?v=4?s=100" width="100px;" alt=""/><br /><sub><b>depfu[bot]</b></sub></a><br /><a href="#maintenance-depfu[bot]" title="Maintenance">🚧</a></td>
+							<td align="center"><a href="https://github.com/apps/dependabot"><img src="https://avatars0.githubusercontent.com/in/29110?v=4?s=100" width="100px;" alt=""/><br /><sub><b>dependabot[bot]</b></sub></a><br /><a href="#maintenance-dependabot[bot]" title="Maintenance">🚧</a></td>
+							<td align="center"><a href="https://github.com/apps/allcontributors"><img src="https://avatars0.githubusercontent.com/in/23186?v=4?s=100" width="100px;" alt=""/><br /><sub><b>allcontributors[bot]</b></sub></a><br /><a href="https://github.com/sapphire-project/plugins/commits?author=allcontributors[bot]" title="Documentation">📖</a></td>
+						</tr>
+						<tr>
+							<td align="center"><a href="https://github.com/Nytelife26"><img src="https://avatars1.githubusercontent.com/u/22531310?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tyler J Russell</b></sub></a><br /><a href="https://github.com/sapphire-project/plugins/commits?author=Nytelife26" title="Code">💻</a></td>
+							<td align="center"><a href="https://github.com/Stitch07"><img src="https://avatars.githubusercontent.com/u/29275227?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Stitch07</b></sub></a><br /><a href="https://github.com/sapphire-project/plugins/commits?author=Stitch07" title="Code">💻</a> <a href="https://github.com/sapphire-project/plugins/issues?q=author%3AStitch07" title="Bug reports">🐛</a></td>
+						</tr>
+					</table>
+					<!-- markdownlint-restore -->
+					<!-- prettier-ignore-end -->
+					<!-- ALL-CONTRIBUTORS-LIST:END -->
+					<p>This project follows the <a href="https://github.com/all-contributors/all-contributors">all-contributors</a> specification. Contributions of any kind welcome!</p>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>References</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="_sapphire_plugin_subcommands.html#subcommandentry" class="tsd-kind-icon">Sub<wbr>Command<wbr>Entry</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="_sapphire_plugin_subcommands.html#subcommandentrycommand" class="tsd-kind-icon">Sub<wbr>Command<wbr>Entry<wbr>Command</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="_sapphire_plugin_subcommands.html#subcommandentrymethod" class="tsd-kind-icon">Sub<wbr>Command<wbr>Entry<wbr>Method</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="_sapphire_plugin_subcommands.html#subcommandmanager" class="tsd-kind-icon">Sub<wbr>Command<wbr>Manager</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="_sapphire_plugin_subcommands.html#subcommandplugincommand" class="tsd-kind-icon">Sub<wbr>Command<wbr>Plugin<wbr>Command</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="_sapphire_plugin_subcommands.html#subcommandplugincommandoptions" class="tsd-kind-icon">Sub<wbr>Command<wbr>Plugin<wbr>Command<wbr>Options</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Modules</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-module tsd-parent-kind-module"><a href="_sapphire_plugin_subcommands._framework_.html" class="tsd-kind-icon">&quot;framework&quot;</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/_sapphire_plugin_subcommands.subcommandentry-1.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Entry</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/_sapphire_plugin_subcommands.subcommandentrycommand-1.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Entry<wbr>Command</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/_sapphire_plugin_subcommands.subcommandentrymethod-1.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Entry<wbr>Method</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/_sapphire_plugin_subcommands.subcommandmanager-1.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Manager</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/_sapphire_plugin_subcommands.subcommandplugincommand-1.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Plugin<wbr>Command</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter"><a href="../interfaces/_sapphire_plugin_subcommands.subcommandplugincommandoptions-1.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Plugin<wbr>Command<wbr>Options</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>References</h2>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="subcommandentry" class="tsd-anchor"></a>
+					<h3>Sub<wbr>Command<wbr>Entry</h3>
+					Re-exports <a href="../classes/_sapphire_plugin_subcommands.subcommandentry-1.html">SubCommandEntry</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="subcommandentrycommand" class="tsd-anchor"></a>
+					<h3>Sub<wbr>Command<wbr>Entry<wbr>Command</h3>
+					Re-exports <a href="../classes/_sapphire_plugin_subcommands.subcommandentrycommand-1.html">SubCommandEntryCommand</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="subcommandentrymethod" class="tsd-anchor"></a>
+					<h3>Sub<wbr>Command<wbr>Entry<wbr>Method</h3>
+					Re-exports <a href="../classes/_sapphire_plugin_subcommands.subcommandentrymethod-1.html">SubCommandEntryMethod</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="subcommandmanager" class="tsd-anchor"></a>
+					<h3>Sub<wbr>Command<wbr>Manager</h3>
+					Re-exports <a href="../classes/_sapphire_plugin_subcommands.subcommandmanager-1.html">SubCommandManager</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="subcommandplugincommand" class="tsd-anchor"></a>
+					<h3>Sub<wbr>Command<wbr>Plugin<wbr>Command</h3>
+					Re-exports <a href="../classes/_sapphire_plugin_subcommands.subcommandplugincommand-1.html">SubCommandPluginCommand</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="subcommandplugincommandoptions" class="tsd-anchor"></a>
+					<h3>Sub<wbr>Command<wbr>Plugin<wbr>Command<wbr>Options</h3>
+					Re-exports <a href="../interfaces/_sapphire_plugin_subcommands.subcommandplugincommandoptions-1.html">SubCommandPluginCommandOptions</a>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_sapphire_plugin_api.html">@sapphire/plugin-<wbr>api</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_sapphire_plugin_i18next.html">@sapphire/plugin-<wbr>i18next</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_sapphire_plugin_logger.html">@sapphire/plugin-<wbr>logger</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="_sapphire_plugin_subcommands.html">@sapphire/plugin-<wbr>subcommands</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="_sapphire_plugin_subcommands.html#subcommandentry" class="tsd-kind-icon">Sub<wbr>Command<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="_sapphire_plugin_subcommands.html#subcommandentrycommand" class="tsd-kind-icon">Sub<wbr>Command<wbr>Entry<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="_sapphire_plugin_subcommands.html#subcommandentrymethod" class="tsd-kind-icon">Sub<wbr>Command<wbr>Entry<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="_sapphire_plugin_subcommands.html#subcommandmanager" class="tsd-kind-icon">Sub<wbr>Command<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="_sapphire_plugin_subcommands.html#subcommandplugincommand" class="tsd-kind-icon">Sub<wbr>Command<wbr>Plugin<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="_sapphire_plugin_subcommands.html#subcommandplugincommandoptions" class="tsd-kind-icon">Sub<wbr>Command<wbr>Plugin<wbr>Command<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/_sapphire_plugin_subcommands.subcommandentry-1.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/_sapphire_plugin_subcommands.subcommandentrycommand-1.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Entry<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/_sapphire_plugin_subcommands.subcommandentrymethod-1.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Entry<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/_sapphire_plugin_subcommands.subcommandmanager-1.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/_sapphire_plugin_subcommands.subcommandplugincommand-1.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Plugin<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../interfaces/_sapphire_plugin_subcommands.subcommandplugincommandoptions-1.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Plugin<wbr>Command<wbr>Options</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
