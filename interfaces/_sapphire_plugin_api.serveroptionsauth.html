@@ -93,6 +93,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.serveroptionsauth.html#cookie" class="tsd-kind-icon">cookie</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.serveroptionsauth.html#domainoverwrite" class="tsd-kind-icon">domain<wbr>Overwrite</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.serveroptionsauth.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.serveroptionsauth.html#redirect" class="tsd-kind-icon">redirect</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sapphire_plugin_api.serveroptionsauth.html#scopes" class="tsd-kind-icon">scopes</a></li>
@@ -111,7 +112,7 @@
 					<div class="tsd-signature tsd-kind-icon">cookie<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/fb75c67/packages/api/src/lib/structures/http/Auth.ts#L181">packages/api/src/lib/structures/http/Auth.ts:181</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/32f9222/packages/api/src/lib/structures/http/Auth.ts#L184">packages/api/src/lib/structures/http/Auth.ts:184</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -129,12 +130,38 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="domainoverwrite" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> domain<wbr>Overwrite</h3>
+					<div class="tsd-signature tsd-kind-icon">domain<wbr>Overwrite<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/32f9222/packages/api/src/lib/structures/http/Auth.ts#L217">packages/api/src/lib/structures/http/Auth.ts:217</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The domain that should be used for the cookie. This overwrites the automatic detection of the domain.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>remark</dt>
+							<dd><p>if you want to support subdomains (<code>one.example.two</code> and <code>two.example.com</code>) then you need to use prefix your domain with a <code>.</code>, for example <code>.example.com</code></p>
+							</dd>
+							<dt>since</dt>
+							<dd><p>2.1.0</p>
+							</dd>
+							<dt>default</dt>
+							<dd><p>undefined</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="id" class="tsd-anchor"></a>
 					<h3>id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/fb75c67/packages/api/src/lib/structures/http/Auth.ts#L174">packages/api/src/lib/structures/http/Auth.ts:174</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/32f9222/packages/api/src/lib/structures/http/Auth.ts#L177">packages/api/src/lib/structures/http/Auth.ts:177</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -154,7 +181,7 @@
 					<div class="tsd-signature tsd-kind-icon">redirect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/fb75c67/packages/api/src/lib/structures/http/Auth.ts#L200">packages/api/src/lib/structures/http/Auth.ts:200</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/32f9222/packages/api/src/lib/structures/http/Auth.ts#L203">packages/api/src/lib/structures/http/Auth.ts:203</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -174,7 +201,7 @@
 					<div class="tsd-signature tsd-kind-icon">scopes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/fb75c67/packages/api/src/lib/structures/http/Auth.ts#L194">packages/api/src/lib/structures/http/Auth.ts:194</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/32f9222/packages/api/src/lib/structures/http/Auth.ts#L197">packages/api/src/lib/structures/http/Auth.ts:197</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -197,7 +224,7 @@
 					<div class="tsd-signature tsd-kind-icon">secret<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/fb75c67/packages/api/src/lib/structures/http/Auth.ts#L187">packages/api/src/lib/structures/http/Auth.ts:187</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/32f9222/packages/api/src/lib/structures/http/Auth.ts#L190">packages/api/src/lib/structures/http/Auth.ts:190</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -217,7 +244,7 @@
 					<div class="tsd-signature tsd-kind-icon">transformers<span class="tsd-signature-symbol">:</span> <a href="_sapphire_plugin_api.logindatatransformer.html" class="tsd-signature-type">LoginDataTransformer</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/fb75c67/packages/api/src/lib/structures/http/Auth.ts#L207">packages/api/src/lib/structures/http/Auth.ts:207</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/plugins/blob/32f9222/packages/api/src/lib/structures/http/Auth.ts#L210">packages/api/src/lib/structures/http/Auth.ts:210</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -265,6 +292,9 @@
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_sapphire_plugin_api.serveroptionsauth.html#cookie" class="tsd-kind-icon">cookie</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_sapphire_plugin_api.serveroptionsauth.html#domainoverwrite" class="tsd-kind-icon">domain<wbr>Overwrite</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_sapphire_plugin_api.serveroptionsauth.html#id" class="tsd-kind-icon">id</a>
