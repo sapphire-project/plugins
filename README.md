@@ -35,7 +35,7 @@ We accept donations through Open Collective, Ko-fi, Paypal, Patreon and GitHub S
 | :-------------: | :----------------------------------------------------------------------------------------------: |
 | Open Collective |                    [Click Here](https://opencollective.com/sapphire-project)                     |
 |      Ko-fi      |                         [Click Here](https://ko-fi.com/sapphireproject)                          |
-|     Patreon     |                      [Click Here](https://www.patreon.com/sapphire_project)                      |
+|     Patreon     |                     [Click Here](https://www.patreon.com/sapphire_community)                     |
 |     PayPal      | [Click Here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SP738BQTQQYZY) |
 
 ## Contributors ✨
