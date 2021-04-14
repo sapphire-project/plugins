@@ -31,12 +31,12 @@ Sapphire Project is and always will be open source, even if we don't get donatio
 
 We accept donations through Open Collective, Ko-fi, Paypal, Patreon and GitHub Sponsorships. You can use the buttons below to donate through your method of choice.
 
-|   Donate With   |                                             Address                                              |
-| :-------------: | :----------------------------------------------------------------------------------------------: |
-| Open Collective |                    [Click Here](https://opencollective.com/sapphire-project)                     |
-|      Ko-fi      |                         [Click Here](https://ko-fi.com/sapphireproject)                          |
-|     Patreon     |                     [Click Here](https://www.patreon.com/sapphire_community)                     |
-|     PayPal      | [Click Here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SP738BQTQQYZY) |
+|   Donate With   |                          Address                          |
+| :-------------: | :-------------------------------------------------------: |
+| Open Collective | [Click Here](https://opencollective.com/sapphire-project) |
+|      Ko-fi      |      [Click Here](https://ko-fi.com/sapphireproject)      |
+|     Patreon     | [Click Here](https://www.patreon.com/sapphire_community)  |
+|     PayPal      |        [Click Here](https://sapphirejs.com/paypal)        |
 
 ## Contributors ✨
 
