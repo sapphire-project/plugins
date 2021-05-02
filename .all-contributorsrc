@@ -1,6 +1,6 @@
 {
 	"projectName": "plugins",
-	"projectOwner": "sapphire-community",
+	"projectOwner": "sapphiredev",
 	"repoType": "github",
 	"repoHost": "https://github.com",
 	"files": ["README.md", "packages/api/README.md", "packages/logger/README.md", "packages/i18next/README.md"],
