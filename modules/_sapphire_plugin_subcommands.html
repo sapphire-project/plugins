@@ -127,7 +127,7 @@
 <span class="hljs-keyword">const</span> { SubCommandPluginCommand } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;@sapphire/plugin-subcommands&#x27;</span>);
 
 <span class="hljs-comment">// Extend `SubCommandPluginCommand` instead of `Command`</span>
-<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserCommand</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SubCommandPluginCommand</span> </span>{
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserCommand</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SubCommandPluginCommand</span> </span>{
 
     <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">context, options</span>)</span> {
         <span class="hljs-built_in">super</span>(context, {
@@ -138,15 +138,15 @@
     }
 
     <span class="hljs-comment">// Do not include a `run` method, each method name should match with the subcommand names</span>
-    public <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">add</span>(<span class="hljs-params">message, args</span>)</span> {}
+    <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">add</span>(<span class="hljs-params">message, args</span>)</span> {}
 
-    public <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">remove</span>(<span class="hljs-params">message, args</span>)</span> {}
+    <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">remove</span>(<span class="hljs-params">message, args</span>)</span> {}
 
-    public <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">list</span>(<span class="hljs-params">message, args</span>)</span> {}
+    <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">list</span>(<span class="hljs-params">message, args</span>)</span> {}
 
-    public <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">reset</span>(<span class="hljs-params">message, args</span>)</span> {}
+    <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">reset</span>(<span class="hljs-params">message, args</span>)</span> {}
 
-    public <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">show</span>(<span class="hljs-params">message, args</span>)</span> {}
+    <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">show</span>(<span class="hljs-params">message, args</span>)</span> {}
 }
 </code></pre>
 					<a href="#subcommands-documentation" id="subcommands-documentation" style="color: inherit; text-decoration: none;">

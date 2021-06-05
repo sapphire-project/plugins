@@ -1,77 +1,113 @@
 {
-	"projectName": "plugins",
-	"projectOwner": "sapphiredev",
-	"repoType": "github",
-	"repoHost": "https://github.com",
-	"files": ["README.md", "packages/api/README.md", "packages/logger/README.md", "packages/i18next/README.md"],
-	"imageSize": 100,
-	"commit": true,
-	"commitConvention": "angular",
-	"contributors": [
-		{
-			"login": "Favna",
-			"name": "Jeroen Claassens",
-			"avatar_url": "https://avatars3.githubusercontent.com/u/4019718?v=4",
-			"profile": "https://favware.tech/",
-			"contributions": ["code", "infra", "projectManagement"]
-		},
-		{
-			"login": "QuantumlyTangled",
-			"name": "Nejc Drobnic",
-			"avatar_url": "https://avatars1.githubusercontent.com/u/7919610?v=4",
-			"profile": "https://quantumlytangled.com",
-			"contributions": ["code", "doc"]
-		},
-		{
-			"login": "kyranet",
-			"name": "Antonio Román",
-			"avatar_url": "https://avatars0.githubusercontent.com/u/24852502?v=4",
-			"profile": "https://github.com/kyranet",
-			"contributions": ["code"]
-		},
-		{
-			"login": "vladfrangu",
-			"name": "Vlad Frangu",
-			"avatar_url": "https://avatars3.githubusercontent.com/u/17960496?v=4",
-			"profile": "https://github.com/vladfrangu",
-			"contributions": ["review"]
-		},
-		{
-			"login": "depfu[bot]",
-			"name": "depfu[bot]",
-			"avatar_url": "https://avatars3.githubusercontent.com/in/715?v=4",
-			"profile": "https://github.com/apps/depfu",
-			"contributions": ["maintenance"]
-		},
-		{
-			"login": "dependabot[bot]",
-			"name": "dependabot[bot]",
-			"avatar_url": "https://avatars0.githubusercontent.com/in/29110?v=4",
-			"profile": "https://github.com/apps/dependabot",
-			"contributions": ["maintenance"]
-		},
-		{
-			"login": "allcontributors[bot]",
-			"name": "allcontributors[bot]",
-			"avatar_url": "https://avatars0.githubusercontent.com/in/23186?v=4",
-			"profile": "https://github.com/apps/allcontributors",
-			"contributions": ["doc"]
-		},
-		{
-			"login": "Nytelife26",
-			"name": "Tyler J Russell",
-			"avatar_url": "https://avatars1.githubusercontent.com/u/22531310?v=4",
-			"profile": "https://github.com/Nytelife26",
-			"contributions": ["code"]
-		},
-		{
-			"login": "Stitch07",
-			"name": "Stitch07",
-			"avatar_url": "https://avatars.githubusercontent.com/u/29275227?v=4",
-			"profile": "https://github.com/Stitch07",
-			"contributions": ["code", "bug"]
-		}
-	],
-	"contributorsPerLine": 7,
-	"skipCi": true
+  "projectName": "plugins",
+  "projectOwner": "sapphiredev",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md",
+    "packages/api/README.md",
+    "packages/logger/README.md",
+    "packages/i18next/README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "Favna",
+      "name": "Jeroen Claassens",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4019718?v=4",
+      "profile": "https://favware.tech/",
+      "contributions": [
+        "code",
+        "infra",
+        "projectManagement"
+      ]
+    },
+    {
+      "login": "QuantumlyTangled",
+      "name": "Nejc Drobnic",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7919610?v=4",
+      "profile": "https://quantumlytangled.com",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "kyranet",
+      "name": "Antonio Román",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/24852502?v=4",
+      "profile": "https://github.com/kyranet",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "vladfrangu",
+      "name": "Vlad Frangu",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/17960496?v=4",
+      "profile": "https://github.com/vladfrangu",
+      "contributions": [
+        "review"
+      ]
+    },
+    {
+      "login": "depfu[bot]",
+      "name": "depfu[bot]",
+      "avatar_url": "https://avatars3.githubusercontent.com/in/715?v=4",
+      "profile": "https://github.com/apps/depfu",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "dependabot[bot]",
+      "name": "dependabot[bot]",
+      "avatar_url": "https://avatars0.githubusercontent.com/in/29110?v=4",
+      "profile": "https://github.com/apps/dependabot",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "allcontributors[bot]",
+      "name": "allcontributors[bot]",
+      "avatar_url": "https://avatars0.githubusercontent.com/in/23186?v=4",
+      "profile": "https://github.com/apps/allcontributors",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Nytelife26",
+      "name": "Tyler J Russell",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/22531310?v=4",
+      "profile": "https://github.com/Nytelife26",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Stitch07",
+      "name": "Stitch07",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29275227?v=4",
+      "profile": "https://github.com/Stitch07",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "PlatinBae",
+      "name": "PlatinBae",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50950966?v=4",
+      "profile": "https://github.com/PlatinBae",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
