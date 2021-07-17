@@ -33,7 +33,7 @@ export abstract class Route extends Piece {
 	public constructor(context: PieceContext, options: RouteOptions = {}) {
 		super(context, options);
 
-		const api = this.context.server.options;
+		const api = this.container.server.options;
 		this.router = new RouteData(`${api.prefix ?? ''}${options.route ?? ''}`);
 
 		for (const [method, symbol] of methodEntries) {

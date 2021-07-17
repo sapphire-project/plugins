@@ -11,7 +11,7 @@ export class PluginMiddleware extends Middleware {
 
 	public constructor(context: PieceContext) {
 		super(context, { position: 10 });
-		this.origin = this.context.server.options.origin ?? '*';
+		this.origin = this.container.server.options.origin ?? '*';
 	}
 
 	public run(request: ApiRequest, response: ApiResponse, route: Route | null) {
