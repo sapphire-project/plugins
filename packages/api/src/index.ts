@@ -20,19 +20,23 @@ export * from './lib/utils/MimeTypes';
 export * from './lib/utils/RouteData';
 
 declare module 'discord.js' {
-	export interface Client {
+	interface Client {
 		server: Server;
 	}
 
-	export interface ClientOptions {
+	interface ClientOptions {
 		api?: ServerOptions;
 	}
 }
 
-declare module '@sapphire/framework' {
+declare module '@sapphire/pieces' {
 	interface StoreRegistryEntries {
 		routes: RouteStore;
 		mediaParsers: MediaParserStore;
 		middlewares: MiddlewareStore;
+	}
+
+	interface PieceContextExtras {
+		server: Server;
 	}
 }

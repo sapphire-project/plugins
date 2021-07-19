@@ -8,7 +8,7 @@ export class PluginMiddleware extends Middleware {
 	public constructor(context: PieceContext) {
 		super(context, { position: 40 });
 
-		const { server } = this.context;
+		const { server } = this.container;
 		this.cookieName = server.auth?.cookie ?? 'SAPPHIRE_AUTH';
 		this.enabled = server.auth !== null;
 	}
@@ -22,7 +22,7 @@ export class PluginMiddleware extends Middleware {
 		}
 
 		// Decrypt the cookie, and if the token is invalid, remove the cookie:
-		request.auth = this.context.server.auth!.decrypt(authorization);
+		request.auth = this.container.server.auth!.decrypt(authorization);
 		if (request.auth === null) response.cookies.remove(this.cookieName);
 	}
 }

@@ -1,4 +1,4 @@
-import { Store } from '@sapphire/pieces';
+import { container } from '@sapphire/pieces';
 import { EventEmitter } from 'events';
 import { createServer as httpCreateServer, Server as HttpServer, ServerOptions as HttpOptions } from 'http';
 import type { ListenOptions } from 'net';
@@ -67,7 +67,7 @@ export class Server extends EventEmitter {
 	public constructor({ auth, ...options }: ServerOptions = {}) {
 		super();
 
-		Store.injectedContext.server = this;
+		container.server = this;
 
 		this.options = options;
 		this.server = httpCreateServer({

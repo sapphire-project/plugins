@@ -15,19 +15,12 @@
 		"./register": {
 			"import": "./register.mjs",
 			"require": "./register.js"
-		},
-		"./register-discordjs": {
-			"import": "./register-discordjs.mjs",
-			"require": "./register-discordjs.js"
 		}
 	},
 	"sideEffects": [
 		"./dist/register.js",
 		"./register.js",
-		"./register.mjs",
-		"./dist/register-discordjs.js",
-		"./register-discordjs.js",
-		"./register-discordjs.mjs"
+		"./register.mjs"
 	],
 	"homepage": "https://github.com/sapphiredev/plugins/tree/main/packages/i18next",
 	"scripts": {
@@ -36,7 +29,6 @@
 		"build": "tsc -b src",
 		"postbuild": "run-p esm:**",
 		"esm:register": "gen-esm-wrapper dist/register.js dist/register.mjs",
-		"esm:register-discordjs": "gen-esm-wrapper dist/register-discordjs.js dist/register-discordjs.mjs",
 		"esm:default": "gen-esm-wrapper dist/index.js dist/index.mjs",
 		"prepublishOnly": "yarn build"
 	},
@@ -55,8 +47,7 @@
 	"files": [
 		"dist",
 		"!dist/*.tsbuildinfo",
-		"register.*",
-		"register-discordjs.*"
+		"register.*"
 	],
 	"engines": {
 		"node": ">=14",

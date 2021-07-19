@@ -18,7 +18,7 @@ export class Api extends Plugin {
 			.register(this.server.mediaParsers)
 			.register(this.server.middlewares);
 
-		this.stores.get('events').registerPath(join(__dirname, 'events'));
+		this.stores.get('listeners').registerPath(join(__dirname, 'listeners'));
 		this.server.routes.registerPath(join(__dirname, 'routes'));
 		this.server.middlewares.registerPath(join(__dirname, 'middlewares'));
 		this.server.mediaParsers.registerPath(join(__dirname, 'mediaParsers'));

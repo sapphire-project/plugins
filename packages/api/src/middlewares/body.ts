@@ -10,7 +10,7 @@ export class PluginMiddleware extends Middleware {
 	private readonly mediaParsers: MediaParserStore;
 	public constructor(context: PieceContext) {
 		super(context, { position: 20 });
-		this.mediaParsers = this.context.server.mediaParsers;
+		this.mediaParsers = this.container.server.mediaParsers;
 	}
 
 	public async run(request: ApiRequest, response: ApiResponse, route: Route) {

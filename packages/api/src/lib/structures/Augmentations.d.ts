@@ -25,3 +25,9 @@ declare module '@sapphire/framework' {
 		middlewares: MiddlewareStore;
 	}
 }
+
+declare module '@sapphire/pieces' {
+	interface Container {
+		server: Server;
+	}
+}

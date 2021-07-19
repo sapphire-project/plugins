@@ -14,7 +14,7 @@ export class PluginRoute extends Route {
 	public constructor(context: PieceContext) {
 		super(context, { route: 'oauth/callback' });
 
-		const { server } = this.context;
+		const { server } = this.container;
 		this.enabled = server.auth !== null;
 		this.redirectUri = server.auth?.redirect;
 	}
@@ -31,7 +31,7 @@ export class PluginRoute extends Route {
 		}
 
 		const now = Date.now();
-		const auth = this.context.server.auth!;
+		const auth = this.container.server.auth!;
 		const data = await auth.fetchData(value.access_token);
 		if (!data.user) {
 			return response.status(HttpCodes.InternalServerError).json({ error: 'Failed to fetch the user.' });
@@ -49,7 +49,7 @@ export class PluginRoute extends Route {
 	}
 
 	private async fetchAuth(body: OAuth2BodyData) {
-		const { id, secret } = this.context.server.auth!;
+		const { id, secret } = this.container.server.auth!;
 
 		const data: RESTPostOAuth2AccessTokenURLEncodedData = {
 			/* eslint-disable @typescript-eslint/naming-convention */
@@ -72,7 +72,7 @@ export class PluginRoute extends Route {
 		const json = await result.json();
 		if (result.ok) return json as RESTPostOAuth2AccessTokenResult;
 
-		this.context.client.logger.error(json);
+		this.container.logger.error(json);
 		return null;
 	}
 }

@@ -10,7 +10,7 @@ export class PluginMiddleware extends Middleware {
 	public constructor(context: PieceContext) {
 		super(context, { position: 30 });
 
-		const { server } = this.context;
+		const { server } = this.container;
 		this.domainOverwrite = server.auth?.domainOverwrite ?? null;
 	}
 
